@@ -1,0 +1,57 @@
+@import "../../styles/shared";
+
+.nav {
+  width: 100%;
+  padding: 35px 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+
+  &__logo {
+    font-family: $heading;
+    font-size: 32px;
+    margin-left: 100px;
+  }
+
+  &__list {
+    margin-right: 100px;
+    align-self: center;
+
+    &-items {
+      display: inline;
+      padding: 10px;
+      font-family: $body;
+
+      &-link {
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          border-bottom: 1px solid;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .nav {
+    flex-direction: column;
+    padding: 20px 0px 20px 15px;
+
+    &__logo {
+      margin: 0px 0px 10px 10px;
+    }
+
+    &__list {
+      margin: 0px;
+      align-self: start;
+
+      &-items {
+        display: block;
+      }
+    }
+  }
+}
