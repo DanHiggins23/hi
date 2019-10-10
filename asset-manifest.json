@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "danhiggins.xyz/static/css/main.5d0389bd.chunk.css",
-    "main.js": "danhiggins.xyz/static/js/main.d0aaf91a.chunk.js",
-    "main.js.map": "danhiggins.xyz/static/js/main.d0aaf91a.chunk.js.map",
-    "runtime~main.js": "danhiggins.xyz/static/js/runtime~main.b2cbb0bf.js",
-    "runtime~main.js.map": "danhiggins.xyz/static/js/runtime~main.b2cbb0bf.js.map",
-    "static/js/2.e1ff63d2.chunk.js": "danhiggins.xyz/static/js/2.e1ff63d2.chunk.js",
-    "static/js/2.e1ff63d2.chunk.js.map": "danhiggins.xyz/static/js/2.e1ff63d2.chunk.js.map",
-    "index.html": "danhiggins.xyz/index.html",
-    "precache-manifest.be2465dbda3b54f6f0dec28490c2efe8.js": "danhiggins.xyz/precache-manifest.be2465dbda3b54f6f0dec28490c2efe8.js",
-    "service-worker.js": "danhiggins.xyz/service-worker.js",
-    "static/css/main.5d0389bd.chunk.css.map": "danhiggins.xyz/static/css/main.5d0389bd.chunk.css.map",
-    "static/media/java.png": "danhiggins.xyz/static/media/java.7c17a5f1.png"
+    "main.css": "/DanHiggins23/my-portfolio/static/css/main.5d0389bd.chunk.css",
+    "main.js": "/DanHiggins23/my-portfolio/static/js/main.d16bc492.chunk.js",
+    "main.js.map": "/DanHiggins23/my-portfolio/static/js/main.d16bc492.chunk.js.map",
+    "runtime~main.js": "/DanHiggins23/my-portfolio/static/js/runtime~main.c8afa701.js",
+    "runtime~main.js.map": "/DanHiggins23/my-portfolio/static/js/runtime~main.c8afa701.js.map",
+    "static/js/2.2dfa8182.chunk.js": "/DanHiggins23/my-portfolio/static/js/2.2dfa8182.chunk.js",
+    "static/js/2.2dfa8182.chunk.js.map": "/DanHiggins23/my-portfolio/static/js/2.2dfa8182.chunk.js.map",
+    "index.html": "/DanHiggins23/my-portfolio/index.html",
+    "precache-manifest.eb9c54fe0da2bb1c55581f9101abfeae.js": "/DanHiggins23/my-portfolio/precache-manifest.eb9c54fe0da2bb1c55581f9101abfeae.js",
+    "service-worker.js": "/DanHiggins23/my-portfolio/service-worker.js",
+    "static/css/main.5d0389bd.chunk.css.map": "/DanHiggins23/my-portfolio/static/css/main.5d0389bd.chunk.css.map",
+    "static/media/java.png": "/DanHiggins23/my-portfolio/static/media/java.7c17a5f1.png"
   }
 }
