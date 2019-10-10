@@ -3,12 +3,13 @@ import Progress from '../Progress';
 import './Nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Vara from 'vara';
 
 export default class Nav extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { 
+        this.state = {
             display: false,
             scrollPosition: 0
         }
@@ -21,43 +22,65 @@ export default class Nav extends Component {
     }
 
     listenToScrollEvent = () => {
-		document.addEventListener("scroll", () => {
-			requestAnimationFrame(() => {
-				this.calculateScrollDistance();
-			});
-		});
-	};
+        document.addEventListener("scroll", () => {
+            requestAnimationFrame(() => {
+                this.calculateScrollDistance();
+            });
+        });
+    };
 
-	componentDidMount() {
-		this.listenToScrollEvent();
-	}
+    componentDidMount() {
+        this.listenToScrollEvent();
+    }
 
-	calculateScrollDistance = () => {
-		const scrollTop = window.pageYOffset;
-		const windowHeight = window.innerHeight;
-		const docHeight = this.getDocHeight();
+    calculateScrollDistance = () => {
+        const scrollTop = window.pageYOffset;
+        const windowHeight = window.innerHeight;
+        const docHeight = this.getDocHeight();
 
-		const totalDocScrollLength = docHeight - windowHeight;
-		const scrollPosition = Math.ceil(scrollTop / totalDocScrollLength * 100)
+        const totalDocScrollLength = docHeight - windowHeight;
+        const scrollPosition = Math.ceil(scrollTop / totalDocScrollLength * 100)
 
-		this.setState({
-			scrollPosition,
-		});
-	}
+        this.setState({
+            scrollPosition,
+        });
+    }
 
-	getDocHeight = () => {
-		return Math.max(
-			document.body.scrollHeight, document.documentElement.scrollHeight,
-			document.body.offsetHeight, document.documentElement.offsetHeight,
-			document.body.clientHeight, document.documentElement.clientHeight
-		);
-	}
+    getDocHeight = () => {
+        return Math.max(
+            document.body.scrollHeight, document.documentElement.scrollHeight,
+            document.body.offsetHeight, document.documentElement.offsetHeight,
+            document.body.clientHeight, document.documentElement.clientHeight
+        );
+    }
 
     render() {
         return (
             <div>
                 <div className="nav">
-                    <h1 className="nav__logo">DH</h1>
+                    {/* <div class="container2">
+                        <svg viewBox="0 0 1418 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+                            <title>@WebDesignerMag</title>
+                            <g stroke="none" fill="none" fill-rule="evenodd" fill-opacity="1">
+                                <text id="@WebDesignerMag" fill="black" font-weight="normal" font-family="Kaushan Script, cursive" font-size="130">
+                                    <tspan x="3" y="109">
+                                        <tspan>D</tspan>
+                                        <tspan>a</tspan>
+                                        <tspan>n{'\u00A0'}</tspan>
+                                        <tspan>H</tspan>
+                                        <tspan>i</tspan>
+                                        <tspan>g</tspan>
+                                        <tspan>g</tspan>
+                                        <tspan>i</tspan>
+                                        <tspan>n</tspan>
+                                        <tspan>s</tspan>
+                                    </tspan>
+                                </text>
+                            </g>
+                        </svg>
+                    </div> */}
+                    <h1 className="nav__logo">Dan Higgins</h1>
+                    <h1 className="nav__logo--mobile">DH</h1>
                     <ul className="nav__list">
                         <li className="nav__list-items nav__list-items--desktop">
                             <a className="nav__list-items-link" href="#">ABOUT</a>
