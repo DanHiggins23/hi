@@ -4,7 +4,7 @@ const  Progress  =  styled.div`
   position:  fixed;
   background:  linear-gradient(
     to right,
-    #8b0817 ${props => props.scroll},
+    #90a4ae ${props => props.scroll},
     transparent  0);
   width:  100%;
   height:  4px;

@@ -1,0 +1,12 @@
+@import '../../../styles/shared';
+
+.about-me {
+    // margin: auto;
+
+    &__image {
+        height: auto;
+        margin: auto;
+        display: block;
+        max-width: 80%;
+    }
+}

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Nav from '../Nav';
 import Title from '../Title';
+import Contact from '../Sections/Contact';
 import './App.scss';
 import '../../styles/_shared.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import NavOverlay from '../NavOverlay';
 import classnames from 'classnames';
+import DownloadCV from '../Sections/DownloadCV';
+import About from '../Sections/About';
 
 export default class App extends Component {
 	constructor(props) {
@@ -37,9 +37,7 @@ export default class App extends Component {
 				<Nav buttonClick={this.handleOverlay} />
 				<div className="section home"></div>
 
-				<div className="section about-me">
-					<Title text="About me" />
-				</div>
+				<About />
 
 				<div className="section projects">
 					<Title text="Projects" />
@@ -87,23 +85,9 @@ export default class App extends Component {
 					<Title text="Experiences" />
 				</div>
 
-				<div className="section contact-me">
-					<Title text="Contact me" />
-					<div className="contact-me__container">
-						<div className="contact-me__container-item">
-							<FontAwesomeIcon icon={faGithub} />
-							<span className="contact-me__link"><a href="#">DanHiggins23</a></span>
-						</div>
-						<div className="contact-me__container-item">
-							<FontAwesomeIcon icon={faEnvelope} />
-							<span className="contact-me__link"><a href="#">danhiggins23@outlook.com</a></span>
-						</div>
-						<div className="contact-me__container-item">
-							<FontAwesomeIcon icon={faLinkedinIn} />
-							<span className="contact-me__link"><a href="#">Dan Higgins</a></span>
-						</div>
-					</div>
-				</div>
+				<DownloadCV />
+
+				<Contact />
 
 				<div className="section footer">
 					<h4>&copy; Dan Higgins 2019</h4>
