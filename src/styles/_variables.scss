@@ -5,8 +5,29 @@ $tablet: 768px;
 $tablet-wide: 960px;
 $desktop: 1200px;
 
-
 // Fonts
 $heading: "Monoton", cursive;
-$heading-2: 'Kaushan Script', cursive;
-$body: "lato", sans-serif;
+$heading-2: "Kaushan Script", cursive;
+$body: "Montserrat", sans-serif;
+
+// Font sizes
+// Mobile
+$mobile-h1: 32px;
+$mobile-h2: 26px;
+$moible-h3: 22px;
+$moible-h4: 18px;
+$moible-p: 16px;
+
+// Tablet
+$tablet-h1: 40px;
+$tablet-h2: 32px;
+$tablet-h3: 24px;
+$tablet-h4: 20px;
+$tablet-p: 16px;
+
+// Desktop
+$desktop-h1: 48px;
+$desktop-h2: 36px;
+$desktop-h3: 28px;
+$desktop-h4: 20px;
+$desktop-p: 16px;

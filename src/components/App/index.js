@@ -5,13 +5,61 @@ import './App.scss';
 import '../../styles/_shared.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faWindowClose, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			visible: false,
+		}
+	}
+
+	handleOverlay = () => {
+		this.setState({
+			visible: !this.state.visible,
+		}, () => {
+			if (this.state.visible === true) {
+				document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+			} else {
+				document.getElementsByTagName("html")[0].style.overflowY = "auto";
+			}
+		});
+
+	}
+
 	render() {
 		return (
 			<div className="App">
-				<Nav />
+				<div className={this.state.visible ? 'overlay slideIn' : 'overlay slideOut'}>
+					<FontAwesomeIcon className="overlay__close" icon={faTimes} onClick={this.handleOverlay} />
+					<div className="overlay__content">
+						<h1 className="overlay__logo">DH</h1>
+						<ul className="overlay__nav">
+							<li className="overlay__nav-item">
+								<a className="overlay__nav-link" href="#">ABOUT</a>
+							</li>
+							<li className="overlay__nav-item">
+								<a className="overlay__nav-link" href="#">PROJECTS</a>
+							</li>
+							<li className="overlay__nav-item">
+								<a className="overlay__nav-link" href="#">SKILLS</a>
+							</li>
+							<li className="overlay__nav-item">
+								<a className="overlay__nav-link" href="#">EXPERIENCES</a>
+							</li>
+							<li className="overlay__nav-item">
+								<a className="overlay__nav-link" href="#">CONTACT</a>
+							</li>
+						</ul>
+						<div className="overlay__socials">
+							<FontAwesomeIcon className="overlay__socials-icon" icon={faGithub} />
+							<FontAwesomeIcon className="overlay__socials-icon" icon={faEnvelope} />
+							<FontAwesomeIcon className="overlay__socials-icon" icon={faLinkedinIn} />
+						</div>
+					</div>
+				</div>
+				<Nav buttonClick={this.handleOverlay} />
 				<div className="section home"></div>
 
 				<div className="section about-me">
