@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.8a2eb3cc.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.76b1825c.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.76b1825c.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.e4067d84.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.6dc63385.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.6dc63385.chunk.js.map",
     "runtime~main.js": "/my-portfolio/static/js/runtime~main.674e5ed7.js",
     "runtime~main.js.map": "/my-portfolio/static/js/runtime~main.674e5ed7.js.map",
-    "static/js/2.20f5c947.chunk.js": "/my-portfolio/static/js/2.20f5c947.chunk.js",
-    "static/js/2.20f5c947.chunk.js.map": "/my-portfolio/static/js/2.20f5c947.chunk.js.map",
+    "static/js/2.9dc8e392.chunk.js": "/my-portfolio/static/js/2.9dc8e392.chunk.js",
+    "static/js/2.9dc8e392.chunk.js.map": "/my-portfolio/static/js/2.9dc8e392.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.4b879b71f6ea66ac29259f3354ab8fc0.js": "/my-portfolio/precache-manifest.4b879b71f6ea66ac29259f3354ab8fc0.js",
+    "precache-manifest.2c0ca675c8467e164739b1432200ade4.js": "/my-portfolio/precache-manifest.2c0ca675c8467e164739b1432200ade4.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.8a2eb3cc.chunk.css.map": "/my-portfolio/static/css/main.8a2eb3cc.chunk.css.map",
+    "static/css/main.e4067d84.chunk.css.map": "/my-portfolio/static/css/main.e4067d84.chunk.css.map",
     "static/media/DanHiggins.pdf": "/my-portfolio/static/media/DanHiggins.1b0122e5.pdf",
+    "static/media/QA-logo.png": "/my-portfolio/static/media/QA-logo.fbf3ad9e.png",
+    "static/media/bt-logo.png": "/my-portfolio/static/media/bt-logo.5c8f04b3.png",
+    "static/media/ford-logo.png": "/my-portfolio/static/media/ford-logo.919a39e1.png",
     "static/media/graduation.jpg": "/my-portfolio/static/media/graduation.fd3af5c9.jpg",
-    "static/media/java.png": "/my-portfolio/static/media/java.7c17a5f1.png"
+    "static/media/java.png": "/my-portfolio/static/media/java.7c17a5f1.png",
+    "static/media/nb-logo.png": "/my-portfolio/static/media/nb-logo.b2f8a129.png"
   }
 }
