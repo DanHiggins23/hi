@@ -8,6 +8,7 @@
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
+  z-index: 99;
 
   &__logo {
     font-family: $heading-2;

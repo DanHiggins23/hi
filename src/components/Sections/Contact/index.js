@@ -8,7 +8,7 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 export default function Contact(props) {
     return (
         <div className="section contact-me">
-            <Title text="Contact me" />
+            <Title text="Want to get in touch? &#128222;" />
             <div className="contact-me__container">
                 <div className="contact-me__container-item">
                     <FontAwesomeIcon icon={faGithub} />

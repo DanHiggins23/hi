@@ -1,12 +1,44 @@
-@import '../../../styles/shared';
+@import "../../../styles/shared";
 
 .about-me {
-    // margin: auto;
+  .title {
+    padding-bottom: 40px;
 
-    &__image {
-        height: auto;
-        margin: auto;
-        display: block;
-        max-width: 80%;
+    &__border {
+      display: none;
     }
+  }
+
+  &__description {
+    text-align: center;
+    font-family: $body;
+    font-size: $desktop-h3;
+    line-height: 40px;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+  &__image {
+    height: auto;
+    margin: auto;
+    display: block;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: $mobile) {
+  .about-me {
+    &__description {
+      font-size: $mobile-h3;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .about-me {
+    &__description {
+      font-size: $tablet-h3;
+    }
+  }
 }

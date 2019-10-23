@@ -1,0 +1,65 @@
+@import "../../../styles/shared";
+
+.clients {
+  background-color: $light-grey;
+
+  .title {
+    padding-bottom: 40px;
+
+    &__border {
+      display: none;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-family: $body;
+    font-size: $desktop-h4;
+    line-height: 30px;
+    margin: auto;
+    margin: 0px 50px;
+    padding-bottom: 50px;
+  }
+
+  &__container {
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    padding: 20px 0px;
+  }
+
+  &__image {
+    filter: grayscale(100%);
+    object-fit: scale-down;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $tablet-wide) {
+  .clients {
+    &__description {
+      width: 50%;
+      margin: auto;
+    }
+
+    &__container {
+      flex-direction: row;
+      width: 80%;
+    }
+
+    &__image {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .clients {
+    &__container {
+      width: 60%;
+    }
+  }
+}

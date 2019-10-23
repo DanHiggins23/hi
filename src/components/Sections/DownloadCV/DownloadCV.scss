@@ -1,13 +1,14 @@
 @import "../../../styles/shared";
 
 .download-cv {
-  background-color: white;
+  background-color: $light-grey;
   text-align: center;
-  margin: 80px 30px;
+  padding: 80px 30px;
   font-family: $body;
 
   &__title {
     font-size: $mobile-h2;
+    font-weight: bold;
     margin-bottom: 15px;
   }
 
