@@ -1,0 +1,46 @@
+@import "../../styles/shared";
+
+.intro {
+  font-family: $body;
+  text-align: center;
+
+  &__title {
+    font-size: $mobile-h1;
+    margin: 0px 60px;
+    padding-bottom: 40px;
+    color: $navy;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: $mobile-h4;
+    line-height: 30px;
+    margin: auto;
+    width: 40%;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .intro {
+    &__title {
+      font-size: $tablet-h1;
+    }
+    
+    &__description {
+      font-size: $tablet-h4;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro {
+    &__title {
+      font-size: $desktop-h1;
+    }
+
+    &__description {
+      font-size: $desktop-h4;
+    }
+  }
+}

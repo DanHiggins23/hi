@@ -64,13 +64,10 @@ export default class Nav extends Component {
                             <a className="nav__list-items-link" href="#">ABOUT</a>
                         </li>
                         <li className="nav__list-items nav__list-items--desktop">
-                            <a className="nav__list-items-link" href="#">PROJECTS</a>
+                            <a className="nav__list-items-link" href="#">CLIENTS</a>
                         </li>
                         <li className="nav__list-items nav__list-items--desktop">
                             <a className="nav__list-items-link" href="#">SKILLS</a>
-                        </li>
-                        <li className="nav__list-items nav__list-items--desktop">
-                            <a className="nav__list-items-link" href="#">EXPERIENCES</a>
                         </li>
                         <li className="nav__list-items nav__list-items--desktop">
                             <a className="nav__list-items-link" href="#">CONTACT</a>

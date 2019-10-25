@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Nav from '../Nav';
-import Title from '../Title';
 import Contact from '../Sections/Contact';
 import './App.scss';
 import '../../styles/_shared.scss';

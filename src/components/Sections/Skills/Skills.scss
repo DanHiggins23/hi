@@ -3,16 +3,6 @@
 .skills {
   background-color: white;
 
-  &__intro {
-    text-align: center;
-    font-family: $body;
-    font-size: $desktop-h4;
-    line-height: 30px;
-    margin: auto;
-    width: 40%;
-    padding-bottom: 50px;
-  }
-
   &__icon {
     border-radius: 50%;
     width: 120px;
