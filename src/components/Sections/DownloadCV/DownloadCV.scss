@@ -3,7 +3,7 @@
 .download-cv {
   background-color: $light-grey;
   text-align: center;
-  padding: 80px 30px;
+  padding: 100px 30px;
   font-family: $body;
 
   &__title {
@@ -18,13 +18,19 @@
   }
 
   &__button {
-    padding: 18px 60px;
-    background-color: $blue-grey;
-    border-radius: 120px;
+    padding: 15px 60px;
+    background-color: $primary-light;
+    border-radius: 5px;
     font-family: $body;
     font-size: $notes;
     text-decoration: none;
     color: white;
+    transition: 0.5s ease-in;
+
+    &:hover {
+      background-color: $primary-dark;
+      transition: 0.5s ease-out;
+    }
   }
 }
 

@@ -36,7 +36,6 @@ export default class App extends Component {
 			<div className="App">
 				<NavOverlay className={classnames(this.state.visible ? 'overlay slideIn' : 'overlay slideOut')} buttonClick={this.handleOverlay} />
 				<Nav buttonClick={this.handleOverlay} />
-				<div className="section home"></div>
 
 				<About />
 
@@ -48,7 +47,7 @@ export default class App extends Component {
 
 				<Contact />
 
-				<div className="section footer">
+				<div className="footer">
 					<h4>&copy; Dan Higgins 2019</h4>
 				</div>
 			</div>
