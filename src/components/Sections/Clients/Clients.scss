@@ -35,6 +35,23 @@
     filter: grayscale(100%);
     object-fit: scale-down;
     margin-bottom: 80px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    &--bt {
+      height: 90px;
+    }
+    &--nb {
+      height: 50px;
+    }
+    &--qa {
+      height: 60px;
+    }
+    &--ford {
+      height: 60px;
+    }
   }
 }
 

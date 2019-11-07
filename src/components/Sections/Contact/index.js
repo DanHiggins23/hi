@@ -11,16 +11,13 @@ export default function Contact(props) {
             <Intro title="Want to get in touch? &#128222;" description="Want to say Hello? Check out what I've been up to on Linked In or GitHub. Otherwise just drop me an email!" />
             <div className="contact-me__container">
                 <div className="contact-me__container-item">
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                    <span className="contact-me__link"><a href="#">Dan Higgins</a></span>
+                    <a className="contact-me__icon" href="https://www.linkedin.com/in/danhiggins23"><FontAwesomeIcon icon={faLinkedinIn} /></a>
                 </div>
                 <div className="contact-me__container-item">
-                    <FontAwesomeIcon icon={faGithub} />
-                    <span className="contact-me__link"><a href="#">DanHiggins23</a></span>
+                    <a className="contact-me__icon" href="https://github.com/DanHiggins23"><FontAwesomeIcon icon={faGithub} /></a>
                 </div>
                 <div className="contact-me__container-item">
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    <span className="contact-me__link"><a href="#">danhiggins23@outlook.com</a></span>
+                    <a className="contact-me__icon" href="mailto:danhiggins23@outlook.com"><FontAwesomeIcon icon={faEnvelope} /></a>
                 </div>
             </div>
         </div>
