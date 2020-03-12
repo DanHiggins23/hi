@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.f44ca21f.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.8a73e7ff.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.8a73e7ff.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.fedd3bc0.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.9c546b2e.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.9c546b2e.chunk.js.map",
     "runtime~main.js": "/my-portfolio/static/js/runtime~main.674e5ed7.js",
     "runtime~main.js.map": "/my-portfolio/static/js/runtime~main.674e5ed7.js.map",
-    "static/js/2.e6112aa1.chunk.js": "/my-portfolio/static/js/2.e6112aa1.chunk.js",
-    "static/js/2.e6112aa1.chunk.js.map": "/my-portfolio/static/js/2.e6112aa1.chunk.js.map",
+    "static/js/2.31a499f0.chunk.js": "/my-portfolio/static/js/2.31a499f0.chunk.js",
+    "static/js/2.31a499f0.chunk.js.map": "/my-portfolio/static/js/2.31a499f0.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.f830c47b0bcbfd9e73b2c8539bc23af2.js": "/my-portfolio/precache-manifest.f830c47b0bcbfd9e73b2c8539bc23af2.js",
+    "precache-manifest.456f4d916c7f416c3885f21fea6f280a.js": "/my-portfolio/precache-manifest.456f4d916c7f416c3885f21fea6f280a.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.f44ca21f.chunk.css.map": "/my-portfolio/static/css/main.f44ca21f.chunk.css.map",
+    "static/css/main.fedd3bc0.chunk.css.map": "/my-portfolio/static/css/main.fedd3bc0.chunk.css.map",
     "static/media/DanHiggins.pdf": "/my-portfolio/static/media/DanHiggins.1b0122e5.pdf",
     "static/media/QA-logo.png": "/my-portfolio/static/media/QA-logo.fbf3ad9e.png",
     "static/media/bt-logo.png": "/my-portfolio/static/media/bt-logo.5c8f04b3.png",
     "static/media/ford-logo.png": "/my-portfolio/static/media/ford-logo.919a39e1.png",
-    "static/media/graduation.jpg": "/my-portfolio/static/media/graduation.fd3af5c9.jpg",
-    "static/media/nb-logo.png": "/my-portfolio/static/media/nb-logo.b2f8a129.png"
+    "static/media/nb-logo.png": "/my-portfolio/static/media/nb-logo.b2f8a129.png",
+    "static/media/portfolio-image.png": "/my-portfolio/static/media/portfolio-image.d067fe5c.png",
+    "static/media/santander-logo.png": "/my-portfolio/static/media/santander-logo.602a604c.png"
   }
 }

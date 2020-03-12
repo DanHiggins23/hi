@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef5ea507627b924202f43b59cf87dabc",
+    "revision": "464c7cffa2ff8225a0eb0985fa045c27",
     "url": "/my-portfolio/index.html"
   },
   {
-    "revision": "d6c2f5861722c5ab413a",
-    "url": "/my-portfolio/static/css/main.f44ca21f.chunk.css"
+    "revision": "8c87cb385774ceb7b8ff",
+    "url": "/my-portfolio/static/css/main.fedd3bc0.chunk.css"
   },
   {
-    "revision": "7be73be0b2a782c94702",
-    "url": "/my-portfolio/static/js/2.e6112aa1.chunk.js"
+    "revision": "fe3a805eb7f63b4cdc81",
+    "url": "/my-portfolio/static/js/2.31a499f0.chunk.js"
   },
   {
-    "revision": "d6c2f5861722c5ab413a",
-    "url": "/my-portfolio/static/js/main.8a73e7ff.chunk.js"
+    "revision": "8c87cb385774ceb7b8ff",
+    "url": "/my-portfolio/static/js/main.9c546b2e.chunk.js"
   },
   {
     "revision": "f2d15970f74596a69ca7",
@@ -36,11 +36,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-portfolio/static/media/ford-logo.919a39e1.png"
   },
   {
-    "revision": "fd3af5c9d0e816b85048514e8be5c179",
-    "url": "/my-portfolio/static/media/graduation.fd3af5c9.jpg"
-  },
-  {
     "revision": "b2f8a129cc6659cbfbfffd5abc96003e",
     "url": "/my-portfolio/static/media/nb-logo.b2f8a129.png"
+  },
+  {
+    "revision": "d067fe5c50ffbf38340b508491a94cdc",
+    "url": "/my-portfolio/static/media/portfolio-image.d067fe5c.png"
+  },
+  {
+    "revision": "602a604c22be81420a5c6a6f031c5394",
+    "url": "/my-portfolio/static/media/santander-logo.602a604c.png"
   }
 ]);

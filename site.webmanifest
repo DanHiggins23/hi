@@ -1,6 +1,7 @@
 {
     "name": "Dan Higgins",
     "short_name": "Dan Higgins",
+    "start_url": "https://danhiggins23.github.io/my-portfolio/",
     "icons": [
         {
             "src": "icons/android-chrome-192x192.png",
@@ -20,5 +21,5 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "fullscreen"
 }
