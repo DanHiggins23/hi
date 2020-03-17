@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.fedd3bc0.chunk.css",
+    "main.css": "/my-portfolio/static/css/main.ddb7ca18.chunk.css",
     "main.js": "/my-portfolio/static/js/main.0abaf120.chunk.js",
     "main.js.map": "/my-portfolio/static/js/main.0abaf120.chunk.js.map",
     "runtime~main.js": "/my-portfolio/static/js/runtime~main.674e5ed7.js",
@@ -8,9 +8,9 @@
     "static/js/2.fe8d5e5e.chunk.js": "/my-portfolio/static/js/2.fe8d5e5e.chunk.js",
     "static/js/2.fe8d5e5e.chunk.js.map": "/my-portfolio/static/js/2.fe8d5e5e.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.fbc3c9c922b783bcaa6e91b59410ceae.js": "/my-portfolio/precache-manifest.fbc3c9c922b783bcaa6e91b59410ceae.js",
+    "precache-manifest.199b97fe854b0870407ccf67fbbbf9e8.js": "/my-portfolio/precache-manifest.199b97fe854b0870407ccf67fbbbf9e8.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.fedd3bc0.chunk.css.map": "/my-portfolio/static/css/main.fedd3bc0.chunk.css.map",
+    "static/css/main.ddb7ca18.chunk.css.map": "/my-portfolio/static/css/main.ddb7ca18.chunk.css.map",
     "static/media/DanHiggins.pdf": "/my-portfolio/static/media/DanHiggins.1b0122e5.pdf",
     "static/media/QA-logo.png": "/my-portfolio/static/media/QA-logo.fbf3ad9e.png",
     "static/media/bt-logo.png": "/my-portfolio/static/media/bt-logo.5c8f04b3.png",
