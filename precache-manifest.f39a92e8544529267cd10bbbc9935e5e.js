@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3d5b723ebe63aafb2158f415bfc6f95f",
+    "revision": "bcdbba888b6161d48400f973cf604dec",
     "url": "/my-portfolio/index.html"
   },
   {
-    "revision": "90c9802aac02fb6c9b79",
-    "url": "/my-portfolio/static/css/main.8e8511d4.chunk.css"
+    "revision": "59b62a77c813bd4dc384",
+    "url": "/my-portfolio/static/css/main.2e62a60a.chunk.css"
   },
   {
-    "revision": "1f97f94b7a8d29d0124f",
-    "url": "/my-portfolio/static/js/2.eab4da6f.chunk.js"
+    "revision": "36d79304213907f40b6f",
+    "url": "/my-portfolio/static/js/2.c4cf1d4b.chunk.js"
   },
   {
-    "revision": "90c9802aac02fb6c9b79",
-    "url": "/my-portfolio/static/js/main.5015eaee.chunk.js"
+    "revision": "59b62a77c813bd4dc384",
+    "url": "/my-portfolio/static/js/main.01eadbfc.chunk.js"
   },
   {
     "revision": "f2d15970f74596a69ca7",
     "url": "/my-portfolio/static/js/runtime~main.674e5ed7.js"
   },
   {
-    "revision": "1b0122e5f030346b0703d930b7cf850a",
-    "url": "/my-portfolio/static/media/DanHiggins.1b0122e5.pdf"
+    "revision": "0ed75c83f8a59a2252aeaaedf0754b82",
+    "url": "/my-portfolio/static/media/DanHiggins.0ed75c83.pdf"
   },
   {
     "revision": "fbf3ad9e00ef0538bd7349bb3eb6d0f8",
@@ -40,11 +40,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-portfolio/static/media/nb-logo.b2f8a129.png"
   },
   {
+    "revision": "e1a632c3e14928dbaeab44601699f220",
+    "url": "/my-portfolio/static/media/open-university.e1a632c3.png"
+  },
+  {
     "revision": "d067fe5c50ffbf38340b508491a94cdc",
     "url": "/my-portfolio/static/media/portfolio-image.d067fe5c.png"
   },
   {
     "revision": "602a604c22be81420a5c6a6f031c5394",
     "url": "/my-portfolio/static/media/santander-logo.602a604c.png"
+  },
+  {
+    "revision": "faeb3ef8cf3c80bcdf414d4e8329adf4",
+    "url": "/my-portfolio/static/media/teesside-uni.faeb3ef8.png"
   }
 ]);

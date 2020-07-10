@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.8e8511d4.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.5015eaee.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.5015eaee.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.2e62a60a.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.01eadbfc.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.01eadbfc.chunk.js.map",
     "runtime~main.js": "/my-portfolio/static/js/runtime~main.674e5ed7.js",
     "runtime~main.js.map": "/my-portfolio/static/js/runtime~main.674e5ed7.js.map",
-    "static/js/2.eab4da6f.chunk.js": "/my-portfolio/static/js/2.eab4da6f.chunk.js",
-    "static/js/2.eab4da6f.chunk.js.map": "/my-portfolio/static/js/2.eab4da6f.chunk.js.map",
+    "static/js/2.c4cf1d4b.chunk.js": "/my-portfolio/static/js/2.c4cf1d4b.chunk.js",
+    "static/js/2.c4cf1d4b.chunk.js.map": "/my-portfolio/static/js/2.c4cf1d4b.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.45894c6ca7a2b95e43ba06aaf57359fd.js": "/my-portfolio/precache-manifest.45894c6ca7a2b95e43ba06aaf57359fd.js",
+    "precache-manifest.f39a92e8544529267cd10bbbc9935e5e.js": "/my-portfolio/precache-manifest.f39a92e8544529267cd10bbbc9935e5e.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.8e8511d4.chunk.css.map": "/my-portfolio/static/css/main.8e8511d4.chunk.css.map",
-    "static/media/DanHiggins.pdf": "/my-portfolio/static/media/DanHiggins.1b0122e5.pdf",
+    "static/css/main.2e62a60a.chunk.css.map": "/my-portfolio/static/css/main.2e62a60a.chunk.css.map",
+    "static/media/DanHiggins.pdf": "/my-portfolio/static/media/DanHiggins.0ed75c83.pdf",
     "static/media/QA-logo.png": "/my-portfolio/static/media/QA-logo.fbf3ad9e.png",
     "static/media/bt-logo.png": "/my-portfolio/static/media/bt-logo.5c8f04b3.png",
     "static/media/ford-logo.png": "/my-portfolio/static/media/ford-logo.919a39e1.png",
     "static/media/nb-logo.png": "/my-portfolio/static/media/nb-logo.b2f8a129.png",
+    "static/media/open-university.png": "/my-portfolio/static/media/open-university.e1a632c3.png",
     "static/media/portfolio-image.png": "/my-portfolio/static/media/portfolio-image.d067fe5c.png",
-    "static/media/santander-logo.png": "/my-portfolio/static/media/santander-logo.602a604c.png"
+    "static/media/santander-logo.png": "/my-portfolio/static/media/santander-logo.602a604c.png",
+    "static/media/teesside-uni.png": "/my-portfolio/static/media/teesside-uni.faeb3ef8.png"
   }
 }
