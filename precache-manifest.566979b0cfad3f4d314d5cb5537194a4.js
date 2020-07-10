@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bcdbba888b6161d48400f973cf604dec",
+    "revision": "0170fce18965957bc34c5626c0aef440",
     "url": "/my-portfolio/index.html"
   },
   {
-    "revision": "59b62a77c813bd4dc384",
-    "url": "/my-portfolio/static/css/main.2e62a60a.chunk.css"
+    "revision": "8d7e038267aba4398b38",
+    "url": "/my-portfolio/static/css/main.bcf89517.chunk.css"
   },
   {
     "revision": "36d79304213907f40b6f",
     "url": "/my-portfolio/static/js/2.c4cf1d4b.chunk.js"
   },
   {
-    "revision": "59b62a77c813bd4dc384",
-    "url": "/my-portfolio/static/js/main.01eadbfc.chunk.js"
+    "revision": "8d7e038267aba4398b38",
+    "url": "/my-portfolio/static/js/main.4765659e.chunk.js"
   },
   {
     "revision": "f2d15970f74596a69ca7",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fbf3ad9e00ef0538bd7349bb3eb6d0f8",
     "url": "/my-portfolio/static/media/QA-logo.fbf3ad9e.png"
+  },
+  {
+    "revision": "7c3e1a703e6145802d38b0e8944b902d",
+    "url": "/my-portfolio/static/media/amsterdam.7c3e1a70.jpg"
   },
   {
     "revision": "5c8f04b30e43aba530fa35f974be97a4",
@@ -42,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e1a632c3e14928dbaeab44601699f220",
     "url": "/my-portfolio/static/media/open-university.e1a632c3.png"
-  },
-  {
-    "revision": "d067fe5c50ffbf38340b508491a94cdc",
-    "url": "/my-portfolio/static/media/portfolio-image.d067fe5c.png"
   },
   {
     "revision": "602a604c22be81420a5c6a6f031c5394",
