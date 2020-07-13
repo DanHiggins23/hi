@@ -1,6 +1,7 @@
 {
     "name": "Dan Higgins",
     "short_name": "Dan Higgins",
+    "start_url": "https://danhiggins23.github.io/hi/",
     "icons": [
         {
             "src": "icons/android-chrome-192x192.png",
@@ -11,9 +12,14 @@
             "src": "icons/android-chrome-384x384.png",
             "sizes": "384x384",
             "type": "image/png"
+        },
+        {
+            "src": "icons/icons-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "fullscreen"
 }

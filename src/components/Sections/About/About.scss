@@ -1,19 +1,101 @@
 @import "../../../styles/shared";
 
-.about-me {
-  padding-top: 160px;
-  .title {
-    padding-bottom: 40px;
+.ford-underline {
+  border-bottom: 5px solid #1351d8;
+  background: linear-gradient(to bottom, #1351d8 0, #1351d8 100%);
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0 0;
+}
 
-    &__border {
-      display: none;
-    }
+.bt-underline {
+  border-bottom: 5px solid #553a99;
+  background: linear-gradient(to bottom, #553a99 0, #553a99 100%);
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0 0;
+}
+
+.santander-underline {
+  border-bottom: 5px solid #ec0000 ;
+  background: linear-gradient(to bottom, #ec0000  0, #ec0000  100%);
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0 0;
+}
+
+.ford-underline:hover, .bt-underline:hover, .santander-underline:hover {
+  background-size: 0.625rem 3.125rem;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+
+.section {
+  padding-top: 120px;
+}
+
+.about-me {
+  font-family: $body;
+  text-align: center;
+
+  &__title {
+    font-size: $mobile-h1;
+    line-height: 40px;
+    margin: 0px $mobile-gutter;
+    padding-bottom: 40px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: $mobile-h3;
+    line-height: 30px;
+    margin: 0px $mobile-gutter;
+    padding-bottom: 50px;
   }
 
   &__image {
     height: auto;
     margin: auto;
     display: block;
-    max-width: 65%;
+    max-width: 75%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .about-me {
+    &__title {
+      font-size: $tablet-h1;
+      margin: 0px $tablet-gutter;
+    }
+
+    &__description {
+      font-size: $tablet-h3;
+      margin: 0px 110px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .about-me {
+    &__title {
+      font-size: $desktop-h1;
+      line-height: 40px;
+      width: 50%;
+      margin: auto;
+    }
+
+    &__description {
+      font-size: $desktop-h3;
+      width: 40%;
+      margin: auto;
+    }
+
+    &__image {
+      max-width: 45%;
+    }
   }
 }

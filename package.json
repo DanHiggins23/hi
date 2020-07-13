@@ -1,7 +1,7 @@
 {
-  "name": "my-portfolio",
+  "name": "hi",
   "version": "0.1.0",
-  "homepage": "https://danhiggins.xyz/my-portfolio",
+  "homepage": "https://danhiggins.tech",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -15,7 +15,10 @@
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-reveal": "^1.2.2",
     "react-scripts": "3.0.1",
+    "react-slick": "^0.25.2",
+    "react-text-loop": "^2.3.0",
     "styled-components": "^4.4.0",
     "vara": "^1.2.0"
   },

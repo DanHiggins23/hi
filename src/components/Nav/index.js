@@ -59,9 +59,9 @@ export default class Nav extends Component {
                 <div className="nav">
                     <h1 className="nav__logo">Dan Higgins</h1>
                     <h1 className="nav__logo--mobile">DH</h1>
-                    <ul className="nav__list">
+                    {/* <ul className="nav__list">
                         <li className="nav__list-items nav__list-items--desktop">
-                            <a className="nav__list-items-link" href="#">ABOUT</a>
+                            <a className="nav__list-items-link" href="#test">ABOUT</a>
                         </li>
                         <li className="nav__list-items nav__list-items--desktop">
                             <a className="nav__list-items-link" href="#">CLIENTS</a>
@@ -70,10 +70,16 @@ export default class Nav extends Component {
                             <a className="nav__list-items-link" href="#">SKILLS</a>
                         </li>
                         <li className="nav__list-items nav__list-items--desktop">
+                            <a className="nav__list-items-link" href="#">PROJECTS</a>
+                        </li>
+                        <li className="nav__list-items nav__list-items--desktop">
+                            <a className="nav__list-items-link" href="#">QUALIFICATIONS</a>
+                        </li>
+                        <li className="nav__list-items nav__list-items--desktop">
                             <a className="nav__list-items-link" href="#">CONTACT</a>
                         </li>
                     </ul>
-                    <FontAwesomeIcon onClick={this.props.buttonClick} className="nav__hamburger" icon={faBars} />
+                    <FontAwesomeIcon onClick={this.props.buttonClick} className="nav__hamburger" icon={faBars} /> */}
                 </div>
                 <Progress scroll={this.state.scrollPosition + "%"} />
             </div>

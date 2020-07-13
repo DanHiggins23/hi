@@ -9,6 +9,7 @@ import DownloadCV from '../Sections/DownloadCV';
 import About from '../Sections/About';
 import Clients from '../Sections/Clients';
 import Skills from '../Sections/Skills';
+import Qualifications from '../Sections/Qualifications';
 
 export default class App extends Component {
 	constructor(props) {
@@ -43,12 +44,14 @@ export default class App extends Component {
 
 				<Skills />
 
+				<Qualifications />
+
 				<DownloadCV />
 
 				<Contact />
 
 				<div className="footer">
-					<h4>&copy; Dan Higgins 2019</h4>
+					<h4>&copy; Dan Higgins 2020</h4>
 				</div>
 			</div>
 		);
