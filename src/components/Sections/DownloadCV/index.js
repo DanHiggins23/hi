@@ -10,7 +10,7 @@ export default function DownloadCV(props) {
                 <h2 className="download-cv__title">Want to find out more?</h2>
                 <h3 className="download-cv__description">Click below to view my CV (.pdf)</h3>
 
-                <span><a className="download-cv__button" href={pdf} target="_blank" rel="noopener">Download CV</a></span>
+                <span><a className="download-cv__button" href={pdf} target="_blank" rel="noopener noreferrer">Download CV</a></span>
             </Fade>
         </div>
     );

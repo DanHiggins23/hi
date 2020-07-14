@@ -24,19 +24,12 @@
 
   &__link {
     display: block;
-    margin-bottom: 5px;
-
-    & a {
-      font-family: $body;
-      font-size: 18px;
-      color: black;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-
-      &:hover {
-        border-bottom: 1px solid;
-      }
-    }
+    margin: 30px 0px 20px;
+    font-family: $body;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
   }
 
   &__description {
@@ -45,6 +38,7 @@
     line-height: 20px;
     margin: 0px $mobile-gutter;
     color: $body-light;
+    transition: ease-out 1s;
   }
 
   &__more {
@@ -61,7 +55,7 @@
 
 @media (min-width: $mobile-wide) {
   .skills {
-    &__container{
+    &__container {
       margin: 0px $tablet-gutter;
     }
   }

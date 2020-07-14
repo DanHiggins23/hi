@@ -2,7 +2,6 @@ import React from 'react';
 import Intro from '../../Intro';
 import './Clients.scss';
 import Fade from 'react-reveal/Fade';
-import Slider from '../../Slider';
 
 export default function Clients(props) {
     return (

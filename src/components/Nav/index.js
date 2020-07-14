@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Progress from '../Progress';
 import './Nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default class Nav extends Component {
 
@@ -59,27 +59,18 @@ export default class Nav extends Component {
                 <div className="nav">
                     <h1 className="nav__logo">Dan Higgins</h1>
                     <h1 className="nav__logo--mobile">DH</h1>
-                    {/* <ul className="nav__list">
+                    <ul className="nav__list">
                         <li className="nav__list-items nav__list-items--desktop">
-                            <a className="nav__list-items-link" href="#test">ABOUT</a>
+                            <a className="nav__list-items-link" href="https://www.linkedin.com/in/danhiggins23">Linked In</a>
                         </li>
                         <li className="nav__list-items nav__list-items--desktop">
-                            <a className="nav__list-items-link" href="#">CLIENTS</a>
+                            <a className="nav__list-items-link" href="https://github.com/DanHiggins23">GitHub</a>
                         </li>
                         <li className="nav__list-items nav__list-items--desktop">
-                            <a className="nav__list-items-link" href="#">SKILLS</a>
-                        </li>
-                        <li className="nav__list-items nav__list-items--desktop">
-                            <a className="nav__list-items-link" href="#">PROJECTS</a>
-                        </li>
-                        <li className="nav__list-items nav__list-items--desktop">
-                            <a className="nav__list-items-link" href="#">QUALIFICATIONS</a>
-                        </li>
-                        <li className="nav__list-items nav__list-items--desktop">
-                            <a className="nav__list-items-link" href="#">CONTACT</a>
+                            <a className="nav__list-items-link" href="mailto:danhiggins23@outlook.com"><FontAwesomeIcon icon={faEnvelope} /></a>
                         </li>
                     </ul>
-                    <FontAwesomeIcon onClick={this.props.buttonClick} className="nav__hamburger" icon={faBars} /> */}
+                    <FontAwesomeIcon onClick={this.props.buttonClick} className="nav__hamburger" icon={faBars} />
                 </div>
                 <Progress scroll={this.state.scrollPosition + "%"} />
             </div>

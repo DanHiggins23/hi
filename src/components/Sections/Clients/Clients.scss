@@ -35,6 +35,7 @@
     filter: grayscale(100%);
     object-fit: scale-down;
     margin-bottom: 80px;
+    transition: ease-out 0.5s;
 
     &:last-of-type {
       margin-bottom: 0px;
@@ -55,6 +56,12 @@
     &--ford {
       height: 60px;
     }
+  }
+
+  &__image:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+    transition: ease-in 0.3s;
   }
 }
 

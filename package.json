@@ -8,6 +8,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.5",
+    "@moondef/react-animated-show-more": "^1.0.4",
     "classnames": "^2.2.6",
     "gh-pages": "^2.1.1",
     "hover.css": "^2.3.2",
@@ -19,6 +20,7 @@
     "react-scripts": "3.0.1",
     "react-slick": "^0.25.2",
     "react-text-loop": "^2.3.0",
+    "react-transition-group": "^4.4.1",
     "styled-components": "^4.4.0",
     "vara": "^1.2.0"
   },

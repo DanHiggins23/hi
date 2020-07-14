@@ -12,19 +12,13 @@ export default function NavOverlay(props) {
                 <h1 className="overlay__logo">DH</h1>
                 <ul className="overlay__nav">
                     <li className="overlay__nav-item">
-                        <a className="overlay__nav-link" href="#">ABOUT</a>
+                        <a className="overlay__nav-link" href="https://www.linkedin.com/in/danhiggins23">LINKED IN</a>
                     </li>
                     <li className="overlay__nav-item">
-                        <a className="overlay__nav-link" href="#">PROJECTS</a>
+                        <a className="overlay__nav-link" href="https://github.com/DanHiggins23">GITHUB</a>
                     </li>
                     <li className="overlay__nav-item">
-                        <a className="overlay__nav-link" href="#">SKILLS</a>
-                    </li>
-                    <li className="overlay__nav-item">
-                        <a className="overlay__nav-link" href="#">EXPERIENCES</a>
-                    </li>
-                    <li className="overlay__nav-item">
-                        <a className="overlay__nav-link" href="#">CONTACT</a>
+                        <a className="overlay__nav-link" href="mailto:danhiggins23@outlook.com">MAIL</a>
                     </li>
                 </ul>
                 <div className="overlay__socials">
