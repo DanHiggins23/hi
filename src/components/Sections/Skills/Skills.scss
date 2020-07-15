@@ -39,6 +39,10 @@
     margin: 0px $mobile-gutter;
     color: $body-light;
     transition: ease-out 1s;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__more {

@@ -56,12 +56,12 @@
     &--ford {
       height: 60px;
     }
-  }
 
-  &__image:hover {
-    filter: grayscale(0%);
-    cursor: pointer;
-    transition: ease-in 0.3s;
+    &:hover {
+      filter: grayscale(0%);
+      cursor: pointer;
+      transition: ease-in 0.3s;
+    }
   }
 }
 
