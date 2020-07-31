@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.scss';
-import Intro from '../../Intro';
+import Intro from '../../Text/Intro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';

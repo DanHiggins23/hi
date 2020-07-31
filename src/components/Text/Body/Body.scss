@@ -1,0 +1,51 @@
+@import "../../../styles/shared";
+
+.body {
+  font-family: $body;
+  text-align: center;
+
+  &__title {
+    font-size: $mobile-h2;
+    line-height: 40px;
+    margin: 0px $mobile-gutter;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: $mobile-h4;
+    line-height: 30px;
+    margin: 0px $mobile-gutter;
+  }
+}
+
+@media (min-width: $tablet) {
+  .body {
+    &__title {
+      font-size: $tablet-h2;
+      margin: 0px $tablet-gutter;
+    }
+
+    &__description {
+      font-size: $tablet-h4;
+      margin: 0px 110px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .body {
+    &__title {
+      font-size: $desktop-h2;
+      line-height: 40px;
+      width: 50%;
+      margin: auto;
+    }
+
+    &__description {
+      font-size: $desktop-h4;
+      width: 40%;
+      margin: auto;
+    }
+  }
+}

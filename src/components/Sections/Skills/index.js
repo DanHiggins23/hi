@@ -1,5 +1,5 @@
 import React from 'react';
-import Intro from '../../Intro';
+import Intro from '../../Text/Intro';
 import { faJava, faReact, faSass, faAdobe } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faBug } from '@fortawesome/free-solid-svg-icons';
 import './Skills.scss';
@@ -10,7 +10,7 @@ export default function Skills(props) {
     return (
         <div className="section skills" >
             <Fade bottom>
-                <Intro title="What can I do? 👨‍💻"
+                <Intro title="What can I do? 💻"
                     description="I'm always learning to expand my skills further. Here's a few examples of what I've been doing recently in the projects I've currently been working on." />
                 <div>
                     <div className="skills__container">

@@ -1,5 +1,5 @@
 import React from 'react';
-import Intro from '../../Intro';
+import Intro from '../../Text/Intro';
 import './Qualifications.scss';
 import Fade from 'react-reveal/Fade';
 
@@ -8,7 +8,7 @@ export default function Qualifications(props) {
         <div className="section qualifications">
             <Fade bottom>
                 <Intro title="My qualifcations 🏆"
-                    description="Here's just a quick overview of what I've been working on in the past few years, over multiple different projects expanding my skills where possible!" />
+                    description="Below are the qualifications I've earnt to date. I'm very keen to delve more into Cloud and Cyber Security, so expect more qualifications soon.." />
 
                 <div className="qualifications__container">
                     <div className="qualifications__container-item">

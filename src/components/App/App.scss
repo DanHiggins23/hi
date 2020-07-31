@@ -13,6 +13,11 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .section {
   padding: 150px 0px 130px 0px;
 }
@@ -23,7 +28,7 @@ img {
 }
 
 .footer {
-  background-color: $light-grey;
+  background-color: white;
   font-family: $body;
   font-size: 16px;
   text-align: center;

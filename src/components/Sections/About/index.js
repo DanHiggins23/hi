@@ -23,7 +23,7 @@ export default function About(props) {
                 <Fade bottom delay={500}>
                     <h3 className="about-me__description">
                         I've been working on a range of projects with companies such as <span className="ford-underline">Ford</span>, <span className="bt-underline">BT</span> and <span className="santander-underline">Santander</span> for the last few years. Have a look what I've been up to!
-                </h3>
+                    </h3>
                 </Fade>
             </div>
             <Fade bottom delay={500}>

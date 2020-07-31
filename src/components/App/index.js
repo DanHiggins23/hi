@@ -8,8 +8,11 @@ import classnames from 'classnames';
 import DownloadCV from '../Sections/DownloadCV';
 import About from '../Sections/About';
 import Clients from '../Sections/Clients';
+import Projects from '../Sections/Projects';
 import Skills from '../Sections/Skills';
 import Qualifications from '../Sections/Qualifications';
+import ProjectInfo from '../ProjectInfo';
+import { Route, Switch } from 'react-router-dom';
 
 export default class App extends Component {
 	constructor(props) {
@@ -38,17 +41,27 @@ export default class App extends Component {
 				<NavOverlay className={classnames(this.state.visible ? 'overlay slideIn' : 'overlay slideOut')} buttonClick={this.handleOverlay} />
 				<Nav buttonClick={this.handleOverlay} />
 
-				<About />
+				<Switch>
+					<Route exact path="/">
+						<About />
 
-				<Clients />
+						<Clients />
 
-				<Skills />
+						<Skills />
 
-				<Qualifications />
+						<Projects />
 
-				<DownloadCV />
+						<Qualifications />
 
-				<Contact />
+						<DownloadCV />
+
+						<Contact />
+					</Route>
+
+					<Route path="/bt">
+						<ProjectInfo />
+					</Route>
+				</Switch>
 
 				<div className="footer">
 					<h4>&copy; Dan Higgins 2020</h4>

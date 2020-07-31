@@ -1,0 +1,94 @@
+@import "../../../styles/shared";
+
+.projects {
+  background-color: $light-grey;
+
+  &__tile-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 75%;
+    height: 500px;
+    margin-bottom: 25px;
+  }
+
+  &__tile {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover > .projects__tile-image {
+      transform: scale(1.25);
+      cursor: pointer;
+    }
+
+    &--santander {
+      background-color: $santander-pastel;
+    }
+
+    &--bt {
+      background-color: $bt-pastel;
+    }
+
+    &--ford {
+      background-color: $ford-pastel;
+    }
+  }
+
+  &__tile-image {
+    transition: ease-in-out 0.4s;
+
+    &--santander {
+      height: 80px;
+    }
+
+    &--bt {
+      height: 80px;
+    }
+
+    &--ford {
+      height: 50px;
+    }
+  }
+}
+
+@media (min-width: $tablet-wide) {
+  .projects {
+    min-height: 1100px;
+    &__tile-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__tile {
+      width: calc(90% / 2);
+      height: 400px;
+      flex-grow: 1;
+
+      &:first-child {
+        margin-bottom: 25px;
+      }
+
+      &--santander {
+        margin-right: 25px;
+      }
+    }
+
+    &__tile-image {
+      &--santander {
+        height: 150px;
+      }
+
+      &--bt {
+        height: 150px;
+      }
+
+      &--ford {
+        height: 100px;
+      }
+    }
+  }
+}

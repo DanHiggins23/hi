@@ -3,6 +3,7 @@ import Progress from '../Progress';
 import './Nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'
 
 export default class Nav extends Component {
 
@@ -57,8 +58,13 @@ export default class Nav extends Component {
         return (
             <div>
                 <div className="nav">
-                    <h1 className="nav__logo">Dan Higgins</h1>
-                    <h1 className="nav__logo--mobile">DH</h1>
+                    <Link className="nav__logo" to="/">
+                        <h1>Dan Higgins</h1>
+                    </Link>
+                    <Link className="nav__logo--mobile" to="/">
+                        <h1>DH</h1>
+                    </Link>
+
                     <ul className="nav__list">
                         <li className="nav__list-items nav__list-items--desktop">
                             <a className="nav__list-items-link" href="https://www.linkedin.com/in/danhiggins23">Linked In</a>

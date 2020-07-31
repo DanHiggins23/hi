@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-portfolio';
+var CACHE_NAME = 'hi';
 var urlsToCache = [
   '/',
   '/completed'

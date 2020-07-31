@@ -1,5 +1,5 @@
 import React from 'react';
-import Intro from '../../Intro';
+import Intro from '../../Text/Intro';
 import './Clients.scss';
 import Fade from 'react-reveal/Fade';
 
