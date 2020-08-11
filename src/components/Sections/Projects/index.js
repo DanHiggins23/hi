@@ -12,10 +12,14 @@ export default function Projects(props) {
                     description="Want to see what I've been up to? Click any tile to have a look at the projects I've been involved in with my biggest clients." />
                 <div className="projects__tile-container">
                     <div className="projects__tile projects__tile--santander">
-                        <img className="projects__tile-image projects__tile-image--santander" src={require('../../../utils/images/clients/santander-logo.png')} alt="Santander Logo" />
+                        <Link className="projects__tile-image" to="/santander">
+                            <img className="projects__tile-image projects__tile-image--santander" src={require('../../../utils/images/clients/santander-logo.png')} alt="Santander Logo" />
+                        </Link>
                     </div>
                     <div className="projects__tile projects__tile--ford">
-                        <img className="projects__tile-image projects__tile-image--ford" src={require('../../../utils/images/clients/ford-logo-trans.png')} alt="BT Logo" />
+                        <Link className="projects__tile-image" to="/ford">
+                            <img className="projects__tile-image projects__tile-image--ford" src={require('../../../utils/images/clients/ford-logo-trans.png')} alt="BT Logo" />
+                        </Link>
                     </div>
                     <div className="projects__tile projects__tile--bt">
                         <Link className="projects__tile-image" to="/bt">

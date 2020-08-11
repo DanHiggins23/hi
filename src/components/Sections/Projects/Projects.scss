@@ -9,13 +9,13 @@
     justify-content: space-between;
     margin: auto;
     width: 75%;
-    height: 500px;
+    height: 600px;
     margin-bottom: 25px;
   }
 
   &__tile {
     width: 100%;
-    height: 150px;
+    height: calc(100% / 3 - 20px);
     display: flex;
     align-items: center;
     justify-content: center;

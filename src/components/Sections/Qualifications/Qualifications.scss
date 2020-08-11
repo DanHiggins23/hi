@@ -31,16 +31,10 @@
   &__image {
     opacity: 0.8;
     object-fit: scale-down;
+    height: 100px;
 
     &:last-of-type {
       margin-bottom: 0px;
-    }
-
-    &--teesside {
-      height: 100px;
-    }
-    &--ou {
-      height: 105px;
     }
   }
 }

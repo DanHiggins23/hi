@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Nav from '../Nav';
+import NavBar from '../Navigation/NavBar';
 import Contact from '../Sections/Contact';
 import './App.scss';
 import '../../styles/_shared.scss';
-import NavOverlay from '../NavOverlay';
+import NavOverlay from '../Navigation/NavOverlay';
 import classnames from 'classnames';
 import DownloadCV from '../Sections/DownloadCV';
 import About from '../Sections/About';
@@ -11,8 +11,11 @@ import Clients from '../Sections/Clients';
 import Projects from '../Sections/Projects';
 import Skills from '../Sections/Skills';
 import Qualifications from '../Sections/Qualifications';
-import ProjectInfo from '../ProjectInfo';
 import { Route, Switch } from 'react-router-dom';
+import BT from '../Sections/Projects/ProjectInfo/BT';
+import Santander from '../Sections/Projects/ProjectInfo/Santander';
+import Ford from '../Sections/Projects/ProjectInfo/Ford';
+import ScrollUp from '../Navigation/ScrollUp';
 
 export default class App extends Component {
 	constructor(props) {
@@ -35,11 +38,15 @@ export default class App extends Component {
 
 	}
 
+	scrollUp() {
+		window.scrollTo(0, 0);
+	}
+
 	render() {
 		return (
 			<div className="App">
 				<NavOverlay className={classnames(this.state.visible ? 'overlay slideIn' : 'overlay slideOut')} buttonClick={this.handleOverlay} />
-				<Nav buttonClick={this.handleOverlay} />
+				<NavBar buttonClick={this.handleOverlay} />
 
 				<Switch>
 					<Route exact path="/">
@@ -59,9 +66,19 @@ export default class App extends Component {
 					</Route>
 
 					<Route path="/bt">
-						<ProjectInfo />
+						<BT />
+					</Route>
+
+					<Route path="/santander">
+						<Santander />
+					</Route>
+
+					<Route path="/ford">
+						<Ford />
 					</Route>
 				</Switch>
+
+				<ScrollUp buttonClick={this.scrollUp} />
 
 				<div className="footer">
 					<h4>&copy; Dan Higgins 2020</h4>

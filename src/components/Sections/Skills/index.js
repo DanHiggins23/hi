@@ -3,7 +3,7 @@ import Intro from '../../Text/Intro';
 import { faJava, faReact, faSass, faAdobe } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faBug } from '@fortawesome/free-solid-svg-icons';
 import './Skills.scss';
-import SkillsItem from '../../SkillsItem';
+import SkillsItem from './SkillsItem';
 import Fade from 'react-reveal/Fade';
 
 export default function Skills(props) {
@@ -23,8 +23,6 @@ export default function Skills(props) {
                         <SkillsItem icon={faBug}
                             title="Testing"
                             text="I have experience using Selenium and Chrome web driver with JUnit to automate processes, as well as using JEST with sinon, React Test and DOM rendered in order to unit test components." />
-                    </div>
-                    <div className="skills__container">
                         <SkillsItem icon={faAdobe}
                             title="AEM"
                             text="I've recently been using AEM 6.2-6.5 and creating Angular and React components end-to-end. The majority of my time was spent using an AEM React SPA implementation of AEM." />

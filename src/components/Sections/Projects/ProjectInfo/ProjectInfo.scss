@@ -1,4 +1,4 @@
-@import "../../styles/shared";
+@import "../../../../styles/shared";
 
 .projectInfo {
     &__tile {
@@ -26,15 +26,15 @@
         transition: ease-in-out 0.4s;
 
         &--santander {
-            height: 100px;
+            height: 80px;
         }
 
         &--bt {
-            height: 120px;
+            height: 100px;
         }
 
         &--ford {
-            height: 50px;
+            height: 60px;
         }
     }
 
@@ -64,6 +64,20 @@
     .projectInfo {
         &__tile {
             width: 40%;
+        }
+
+        &__tile-image {
+            &--santander {
+                height: 100px;
+            }
+    
+            &--bt {
+                height: 120px;
+            }
+    
+            &--ford {
+                height: 80px;
+            }
         }
 
         &__tech-container {

@@ -31,6 +31,7 @@ export default class SkillsItem extends Component {
         return (
             <div className="skills__container-item">
                 <FontAwesomeIcon icon={this.props.icon} />
+                {this.props.imagePath ? <img className="qualifications__image qualifications__image" src={this.props.imagePath} alt={this.props.altText} /> : null}
                 <span className="skills__link">{this.props.title}</span>
                 <p onClick={this.handleClick} className={this.state.showText ? "skills__description skills__test hvr-icon-up" : "skills__description hvr-icon-down"}>{this.getStringLength(this.props.text)}<FontAwesomeIcon icon={this.state.showText ? faArrowAltCircleUp : faArrowAltCircleDown} className="skills__more hvr-icon" onClick={this.handleClick} /></p>
             </div>

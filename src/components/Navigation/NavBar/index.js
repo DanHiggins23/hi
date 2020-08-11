@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Progress from '../Progress';
-import './Nav.scss';
+import './NavBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-export default class Nav extends Component {
+export default class NavBar extends Component {
 
     constructor(props) {
         super(props);
