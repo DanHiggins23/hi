@@ -23,6 +23,7 @@
 @media (min-width: $tablet) {
   .intro {
     &__title {
+      line-height: 60px;
       font-size: $tablet-h1;
       margin: 0px $tablet-gutter;
     }
@@ -38,7 +39,6 @@
   .intro {
     &__title {
       font-size: $desktop-h1;
-      line-height: 40px;
       width: 50%;
       margin: auto;
     }

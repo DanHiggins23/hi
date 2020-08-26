@@ -73,8 +73,9 @@
       margin: 0px $tablet-gutter;
 
       &-item {
-        margin-bottom: 50px;
+        padding-bottom: 10px;
         width: calc(100% / 3);
+        min-height: 340px;
       }
     }
   }
