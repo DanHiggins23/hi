@@ -1,11 +1,8 @@
 @import "../../../styles/shared";
 
-.section {
-  padding-bottom: 70px;
-}
-
 .skills {
   background-color: white;
+  padding-bottom: 0px;
 
   &__container {
     display: flex;
@@ -80,7 +77,7 @@
       &-item {
         padding-bottom: 10px;
         width: calc(100% / 3);
-        min-height: 340px;
+        min-height: 300px;
       }
     }
   }
