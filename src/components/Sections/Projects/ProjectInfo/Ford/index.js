@@ -4,31 +4,32 @@ import Fade from 'react-reveal';
 import Intro from '../../../../Text/Intro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Body from '../../../../Text/Body';
-import { faJava, faReact, faAdobe } from '@fortawesome/free-brands-svg-icons';
 import Back from '../../../../Navigation/Back';
+import { faPhone, faTasks, faServer } from '@fortawesome/free-solid-svg-icons';
 
 export default function Ford(props) {
     return (
         <div className="section projectInfo">
             <Fade>
                 <Intro title="Overview"
-                    description="After learning AEM in my first month at NETbuilder, I put the skills into practise in 2 projects across BT developing components for the support & mobile feature management/usage section of the BT Business site. I began developing components in Angular JS using HTL and then shortly moved to a react implementation. I was personally the first individual to use this implementation across the company and learnt a lot in the process. I then moved onto a single page application implementation within React, where I was producing components end-to-end, documenting each component utilising styleguidist and ensuring high test coverage by writing unit tests for each component using jest. I was also following agile methodologies and ceremonies daily and became very familiar with this process." />
+                    description="During this 3-month summer placement as Project Manager at Ford, I was involved in multiple
+                    different projects, responsible for holding meetings with world-wide clients, working with large
+                    amounts of capital. I personally solely managed a pilot project for the company and brought a
+                    project from Red status to Green in my time at Ford, in which I collaboratively managed a remote team in the United States. During this time, I got very accustomed to
+                    using software such as WebEx and developing my ability to make relationships over the phone." />
 
                 <div className="projectInfo__tile projectInfo__tile--ford">
                     <img className="projectInfo__tile-image projectInfo__tile-image--ford" src={require('../../../../../utils/images/clients/ford-logo-trans.png')} alt="Ford Logo" />
                 </div>
 
-                <Body title="What technologies did I use?"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-
                 <div className="projectInfo__tech-container">
-                    <FontAwesomeIcon className="projectInfo__tech-icon" icon={faAdobe} />
-                    <FontAwesomeIcon className="projectInfo__tech-icon" icon={faReact} />
-                    <FontAwesomeIcon className="projectInfo__tech-icon" icon={faJava} />
+                    <FontAwesomeIcon className="projectInfo__tech-icon" icon={faPhone} />
+                    <FontAwesomeIcon className="projectInfo__tech-icon" icon={faTasks} />
+                    <FontAwesomeIcon className="projectInfo__tech-icon" icon={faServer} />
                 </div>
 
                 <Body title="What did I learn?"
-                    description="At this point, the majority of technologies were fairly new to me. I’d begun to learn them all during my training at QA, but had no real-life experience with them. I feel like my skills in multiple technologies really developed throughout my time at BT. Working with a full-stack technology helped me understand how all the “pieces” go together. In Addition to this, working very closely with other members in my team, I was heavily involved in the process from conception to UX, to UI, to development. This I really enjoyed." />
+                    description="As Ford was my first proper placement and my first taste of working life, I learnt a vast amount. I really developed my ability to develop relationships with colleagues and clients, especially over the phone. A lot of our team worked in the United States, and therefore I never got to meet them face to face. However, taking the time to chat with each team member at the start of each meeting really allowed me to get to know them. As I solely managed a pilot project, it was a great opportunity to put to use my leadership skills - which I really enjoyed." />
 
                 <div className="projectInfo__line"></div>
             </Fade>

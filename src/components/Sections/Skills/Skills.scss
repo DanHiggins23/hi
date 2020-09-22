@@ -15,6 +15,11 @@
     align-items: center;
     flex-wrap: wrap;
 
+    &:after {
+      content: "";
+      flex: auto;
+    }
+
     &-item {
       font-size: 4em;
       text-align: center;
@@ -73,7 +78,7 @@
       margin: 0px $tablet-gutter;
 
       &-item {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         width: calc(100% / 3);
       }
     }

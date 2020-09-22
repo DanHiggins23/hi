@@ -15,13 +15,11 @@ export default function Qualifications(props) {
                     <SkillsItem
                         imagePath={require("../../../utils/images/clients/teesside-uni.png")}
                         altText="Teesside Logo"
-                        title="BSc Computer &amp; Digital Forensics"
-                        text="I've spent the last 6 months working with an AEM React implementation creating functional and stateful components that are unit tested, documented and example files created. I also created this portfolio in React!" />
+                        title="BSc Computer &amp; Digital Forensics" />
                     <SkillsItem
                         imagePath={require("../../../utils/images/clients/open-university.png")}
                         altText="Open University Logo"
-                        title="Introduction to Cyber Security"
-                        text="I've spent the last 6 months working with an AEM React implementation creating functional and stateful components that are unit tested, documented and example files created. I also created this portfolio in React!" />
+                        title="Introduction to Cyber Security" />
                 </div>
             </Fade>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Intro from '../../Text/Intro';
-import { faJava, faReact, faSass, faAdobe } from '@fortawesome/free-brands-svg-icons'
+import { faJava, faReact, faSass, faAdobe, faJenkins } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faBug } from '@fortawesome/free-solid-svg-icons';
 import './Skills.scss';
 import SkillsItem from './SkillsItem';
@@ -22,7 +22,7 @@ export default function Skills(props) {
                             text="I've been using Java recently to create sling models for the AEM React components. I've also produced many projects, such as a bank GUI application and a text-based adventure game." />
                         <SkillsItem icon={faBug}
                             title="Testing"
-                            text="I have experience using Selenium and Chrome web driver with JUnit to automate processes, as well as using JEST with sinon, React Test and DOM rendered in order to unit test components." />
+                            text="I have experience using Selenium and Chrome web driver with JUnit to automate processes, as well as using JEST with sinon, React Test and DOM rendered in order to unit test components. More recently, I have also been using Cypress to test an internal node project at Santander efficiently." />
                         <SkillsItem icon={faAdobe}
                             title="AEM"
                             text="I've recently been using AEM 6.2-6.5 and creating Angular and React components end-to-end. The majority of my time was spent using an AEM React SPA implementation of AEM." />
@@ -31,7 +31,10 @@ export default function Skills(props) {
                             text="I've been doing HTML and CSS for a long time now, with knowledge in HTML5 and CSS3, where I've created multiple websites and Javascript projects. I now continue to use it with JSX in React components." />
                         <SkillsItem icon={faSass}
                             title="SASS"
-                            text="I've been using SASS as my primary css pre-processor using the BEM notation. I've got very comfortable with this procedure and utlised it in the project I was involved with at BT as well as this portfoilio." />
+                            text="I've been using SASS as my primary css pre-processor using the BEM notation. I've got very comfortable with this procedure and utlised it in the project I was involved with at BT as well as this portfolio." />
+                        <SkillsItem icon={faJenkins}
+                            title="Jenkins"
+                            text="During my time at Santander I gained a far clearer understanding of Continuous Integration with gitlab and Jenkins, ensuring pipelines passed before deployments and creating new pipelines within Jenkins." />   
                     </div>
                 </div>
             </Fade>

@@ -13,14 +13,14 @@ export default function Santander(props) {
         <div className="section projectInfo">
             <Fade>
                 <Intro title="Overview"
-                    description="After learning AEM in my first month at NETbuilder, I put the skills into practise in 2 projects across BT developing components for the support & mobile feature management/usage section of the BT Business site. I began developing components in Angular JS using HTL and then shortly moved to a react implementation. I was personally the first individual to use this implementation across the company and learnt a lot in the process. I then moved onto a single page application implementation within React, where I was producing components end-to-end, documenting each component utilising styleguidist and ensuring high test coverage by writing unit tests for each component using jest. I was also following agile methodologies and ceremonies daily and became very familiar with this process." />
+                    description="During my time at Santander, I was situated in an agile squad working within the fraud prevention department within Santech UK as a Full Stack Developer. My initial responsibility was to test an internal rule engine node project, end-to-end. I did this using the Cypress testing framework and integrated it headlessly into a Jenkins pipeline. I was also involved creating micro-services to manipulate payloads and add business logic to allow/prevent/challenge transactions, as well as creating additional operators and end points within the internal rule engine project to allow internal memebers to create more accurate rules." />
 
                 <div className="projectInfo__tile projectInfo__tile--santander">
                     <img className="projectInfo__tile-image projectInfo__tile-image--santander" src={require('../../../../../utils/images/clients/santander-logo.png')} alt="Santander Logo" />
                 </div>
 
                 <Body title="What technologies did I use?"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+                    description="I used range of technologies at my time with Santander, including; Cypress, Node, Angular JS, Java, JUnit, Jenkins and SQL." />
 
                 <div className="projectInfo__tech-container">
                     <FontAwesomeIcon className="projectInfo__tech-icon" icon={faAngular} />
@@ -29,7 +29,7 @@ export default function Santander(props) {
                 </div>
 
                 <Body title="What did I learn?"
-                    description="At this point, the majority of technologies were fairly new to me. I’d begun to learn them all during my training at QA, but had no real-life experience with them. I feel like my skills in multiple technologies really developed throughout my time at BT. Working with a full-stack technology helped me understand how all the “pieces” go together. In Addition to this, working very closely with other members in my team, I was heavily involved in the process from conception to UX, to UI, to development. This I really enjoyed." />
+                    description="I learnt a lot during my time at Santander. Although I had already had become very familiar with the Agile way of working, it was very great to gain further experience and adapt to a new, more structured enviroment and way of working at a Bank. I really enjoyed learning the Cypress framework and thought it was a great way to really understand the details of the internal project that I was to working on. Although I used Java within AEM at BT, it was great to gain further knowledge of creating micro-services and testing them with Postman which I had little prior experience with." />
 
                 <div className="projectInfo__line"></div>
             </Fade>

@@ -7,8 +7,9 @@ const  Progress  =  styled.div`
     #90a4ae ${props => props.scroll},
     transparent  0);
   width:  100%;
-  height:  6px;
-  margin-top: 100px;
+  height:  5px;
+  margin-top: 102px;
+  z-index: 900;
 `;
 
 export  default  Progress;

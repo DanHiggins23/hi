@@ -22,20 +22,20 @@ export default class App extends Component {
 		super(props);
 		this.state = {
 			visible: false,
+			showBack: false
 		}
 	}
 
 	handleOverlay = () => {
 		this.setState({
-			visible: !this.state.visible,
+			visible: !this.state.visible
 		}, () => {
-			if (this.state.visible === true) {
+			if (this.state.visible) {
 				document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 			} else {
 				document.getElementsByTagName("html")[0].style.overflowY = "auto";
 			}
 		});
-
 	}
 
 	scrollUp() {
