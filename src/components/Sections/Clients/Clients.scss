@@ -21,8 +21,8 @@
     padding-bottom: 50px;
   }
 
-  &__container {
-    width: 60%;
+  &__container, &__container--top {
+    width: 50%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +39,10 @@
 
     &:last-of-type {
       margin-bottom: 0px;
+    }
+
+    &--thg {
+      height: 80px;
     }
 
     &--santander {
@@ -87,6 +91,10 @@
   .clients {
     &__container {
       width: 80%;
+    }
+    &__container--top {
+      flex-direction: row;
+      width: 50%;
     }
   }
 }
