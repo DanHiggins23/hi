@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.a67bd1a7.chunk.css",
-    "main.js": "/static/js/main.b99e4062.chunk.js",
-    "main.js.map": "/static/js/main.b99e4062.chunk.js.map",
+    "main.css": "/static/css/main.6a44c6c9.chunk.css",
+    "main.js": "/static/js/main.dc913288.chunk.js",
+    "main.js.map": "/static/js/main.dc913288.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.cf6aaad3.chunk.js": "/static/js/2.cf6aaad3.chunk.js",
-    "static/js/2.cf6aaad3.chunk.js.map": "/static/js/2.cf6aaad3.chunk.js.map",
+    "static/js/2.7d8dfe91.chunk.js": "/static/js/2.7d8dfe91.chunk.js",
+    "static/js/2.7d8dfe91.chunk.js.map": "/static/js/2.7d8dfe91.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.92e933422e03263453ddfbde776bcfe0.js": "/precache-manifest.92e933422e03263453ddfbde776bcfe0.js",
+    "precache-manifest.2c4a830b9d0fc1a04c23311ffe05db77.js": "/precache-manifest.2c4a830b9d0fc1a04c23311ffe05db77.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a67bd1a7.chunk.css.map": "/static/css/main.a67bd1a7.chunk.css.map",
-    "static/media/DanHiggins.pdf": "/static/media/DanHiggins.fb6b8ca4.pdf",
+    "static/css/main.6a44c6c9.chunk.css.map": "/static/css/main.6a44c6c9.chunk.css.map",
+    "static/media/DanHiggins.pdf": "/static/media/DanHiggins.06e73f32.pdf",
     "static/media/QA-logo.png": "/static/media/QA-logo.fbf3ad9e.png",
     "static/media/amsterdam.jpg": "/static/media/amsterdam.50b1e498.jpg",
     "static/media/bt-logo.png": "/static/media/bt-logo.5c8f04b3.png",
@@ -20,6 +20,7 @@
     "static/media/nb-logo.png": "/static/media/nb-logo.b2f8a129.png",
     "static/media/open-university.png": "/static/media/open-university.e1a632c3.png",
     "static/media/santander-logo.png": "/static/media/santander-logo.602a604c.png",
-    "static/media/teesside-uni.png": "/static/media/teesside-uni.faeb3ef8.png"
+    "static/media/teesside-uni.png": "/static/media/teesside-uni.faeb3ef8.png",
+    "static/media/thg-logo.png": "/static/media/thg-logo.58cdab0f.png"
   }
 }

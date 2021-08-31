@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef45a851cd3165fe192aae9d57ef469b",
+    "revision": "251dc1f1f3acaf760cd67e45f32f4c7a",
     "url": "/index.html"
   },
   {
-    "revision": "af4c9c83fecbaa8d55e7",
-    "url": "/static/css/main.a67bd1a7.chunk.css"
+    "revision": "4164ce3824bac6e7e344",
+    "url": "/static/css/main.6a44c6c9.chunk.css"
   },
   {
-    "revision": "23388cbffd4273cc6342",
-    "url": "/static/js/2.cf6aaad3.chunk.js"
+    "revision": "e03254920444665d116c",
+    "url": "/static/js/2.7d8dfe91.chunk.js"
   },
   {
-    "revision": "af4c9c83fecbaa8d55e7",
-    "url": "/static/js/main.b99e4062.chunk.js"
+    "revision": "4164ce3824bac6e7e344",
+    "url": "/static/js/main.dc913288.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "fb6b8ca49f6894fced7874011f384f95",
-    "url": "/static/media/DanHiggins.fb6b8ca4.pdf"
+    "revision": "06e73f32cec3f1e1f606f53ac872b89b",
+    "url": "/static/media/DanHiggins.06e73f32.pdf"
   },
   {
     "revision": "fbf3ad9e00ef0538bd7349bb3eb6d0f8",
@@ -58,5 +58,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "faeb3ef8cf3c80bcdf414d4e8329adf4",
     "url": "/static/media/teesside-uni.faeb3ef8.png"
+  },
+  {
+    "revision": "58cdab0fa966b171d09f203ecb5b7472",
+    "url": "/static/media/thg-logo.58cdab0f.png"
   }
 ]);
