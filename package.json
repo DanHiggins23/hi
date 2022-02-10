@@ -12,7 +12,7 @@
     "classnames": "^2.2.6",
     "gh-pages": "^2.1.1",
     "hover.css": "^2.3.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
