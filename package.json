@@ -1,7 +1,7 @@
 {
   "name": "hi",
   "version": "0.1.0",
-  "homepage": "https://danhiggins23.github.io/hi",
+  "homepage": "https://danhiggins23.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
