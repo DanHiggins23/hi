@@ -4,7 +4,7 @@ import Fade from 'react-reveal';
 import Intro from '../../../../Text/Intro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Body from '../../../../Text/Body';
-import { faJava, faReact, faAdobe } from '@fortawesome/free-brands-svg-icons';
+import { faJava, faReact } from '@fortawesome/free-brands-svg-icons';
 import Back from '../../../../Navigation/Back';
 
 export default function BT(props) {
@@ -22,7 +22,6 @@ export default function BT(props) {
                     description="I used range of technologies at my time with BT, including; Adobe Experience Manager, React JS, Angular JS, Java, JUnit, React Test Utils, React Test Rendered, Styleguidist and SASS." />
 
                 <div className="projectInfo__tech-container">
-                    <FontAwesomeIcon className="projectInfo__tech-icon" icon={faAdobe} />
                     <FontAwesomeIcon className="projectInfo__tech-icon" icon={faReact} />
                     <FontAwesomeIcon className="projectInfo__tech-icon" icon={faJava} />
                 </div>

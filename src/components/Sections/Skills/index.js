@@ -1,6 +1,6 @@
 import React from 'react';
 import Intro from '../../Text/Intro';
-import { faJava, faReact, faSass, faAdobe, faJenkins } from '@fortawesome/free-brands-svg-icons'
+import { faJava, faReact, faSass, faJenkins } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faBug } from '@fortawesome/free-solid-svg-icons';
 import './Skills.scss';
 import SkillsItem from './SkillsItem';
@@ -23,9 +23,6 @@ export default function Skills(props) {
                         <SkillsItem icon={faBug}
                             title="Testing"
                             text="I have experience using Selenium and Chrome web driver with JUnit to automate processes, as well as using JEST with sinon, React Test and DOM rendered in order to unit test components. More recently, I have also been using Cypress to test an internal node project at Santander efficiently." />
-                        <SkillsItem icon={faAdobe}
-                            title="AEM"
-                            text="I've recently been using AEM 6.2-6.5 and creating Angular and React components end-to-end. The majority of my time was spent using an AEM React SPA implementation of AEM." />
                         <SkillsItem icon={faCode}
                             title="HTML &amp; CSS"
                             text="I've been doing HTML and CSS for a long time now, with knowledge in HTML5 and CSS3, where I've created multiple websites and Javascript projects. I now continue to use it with JSX in React components." />

@@ -15,7 +15,6 @@ export default function About(props) {
                             <TextLoop delay="1000" interval="2000">
                                 <span>&nbsp;Dan Higgins</span>
                                 <span>&nbsp;a Developer</span>
-                                <span>&nbsp;a Consultant</span>
                             </TextLoop>
                             <span role="img" aria-label="jsx-a11y/aria-proptypes">&nbsp;👋</span>
                         </div>
