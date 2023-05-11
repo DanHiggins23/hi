@@ -41,10 +41,12 @@
       margin-bottom: 0px;
     }
 
+    &--kitman {
+      height: 50px;
+    }
     &--thg {
       height: 80px;
     }
-
     &--santander {
       height: 90px;
     }
@@ -94,7 +96,7 @@
     }
     &__container--top {
       flex-direction: row;
-      width: 50%;
+      width: 65%;
     }
   }
 }

@@ -11,6 +11,7 @@ export default function Clients(props) {
                     description="Here's a few of the companies I've been working with over the last few years. My roles have ranged from project management to back-end, front-end and full-stack developer. I'm currently employed by QA as a Consultant, deployed at Santander as a Back-end Developer." />
 
                 <div className="clients__container--top">
+                    <img className="clients__image clients__image--kitman" src={require('../../../utils/images/clients/kitman-logo.png')} alt="Kitman Labs Logo" />
                     <img className="clients__image clients__image--thg" src={require('../../../utils/images/clients/thg-logo.png')} alt="THG Logo" />
                     <img className="clients__image clients__image--santander" src={require('../../../utils/images/clients/santander-logo.png')} alt="Santander Logo" />
                 </div>

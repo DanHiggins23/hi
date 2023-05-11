@@ -28,7 +28,7 @@ export default function About(props) {
                 </Fade>
             </div>
             <Fade bottom delay={500}>
-                <img className="about-me__image" src={require('../../../utils/images/amsterdam.jpg')} alt="Me in Amsterdam" />
+                <img className="about-me__image" src={require('../../../utils/images/me-lisbon.jpg')} alt="Me in Lisbon" />
             </Fade>
         </div>
     );
