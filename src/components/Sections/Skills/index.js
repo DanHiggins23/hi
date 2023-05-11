@@ -15,7 +15,7 @@ export default function Skills(props) {
                 <div>
                     <div className="skills__container">
                         <SkillsItem icon={faReact}
-                            title="React JS"
+                            title="React"
                             text="I've spent the last 6 months working with an AEM React implementation creating functional and stateful components that are unit tested, documented and example files created. I also created this portfolio in React!" />
                         <SkillsItem icon={faJava}
                             title="Java"

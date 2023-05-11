@@ -8,7 +8,7 @@ export default function Clients(props) {
         <div className="section clients">
             <Fade bottom>
                 <Intro title="Who've I been working with? 🤝"
-                    description="Here's a few of the companies I've been working with over the last few years. My roles have ranged from project management to back-end, front-end and full-stack developer. I'm currently employed by QA as a Consultant, deployed at Santander as a Back-end Developer." />
+                    description="Here's a few of the companies I've been working with over the last few years. My roles have ranged from project management to back-end, front-end and full-stack developer. I'm currently employed by Kitman Labs as a Front-end developer." />
 
                 <div className="clients__container--top">
                     <img className="clients__image clients__image--kitman" src={require('../../../utils/images/clients/kitman-logo.png')} alt="Kitman Labs Logo" />
