@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from '../Navigation/NavBar';
 import Contact from '../Sections/Contact';
 import './App.scss';
@@ -17,73 +17,78 @@ import Santander from '../Sections/Projects/ProjectInfo/Santander';
 import Ford from '../Sections/Projects/ProjectInfo/Ford';
 import ScrollUp from '../Navigation/ScrollUp';
 
-export default class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			visible: false,
-			showBack: false
-		}
-	}
+export default function App() {
+	const [visible, setVisible] = useState(false);
+	const [showScrollToTop, setShowScrollToTop] = useState(false);
 
-	handleOverlay = () => {
-		this.setState({
-			visible: !this.state.visible
-		}, () => {
-			if (this.state.visible) {
+    const handleScroll = () => {
+        if (window.pageYOffset > 1000) {
+            setShowScrollToTop(true)
+        } else setShowScrollToTop(false);
+    }
+
+	const handleOverlay = () => {
+		setVisible(previousValue => !previousValue, () => {
+			if (visible) {
 				document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 			} else {
 				document.getElementsByTagName("html")[0].style.overflowY = "auto";
 			}
-		});
+		})
 	}
 
-	scrollUp() {
+	const scrollUp = () => {
 		window.scrollTo(0, 0);
 	}
 
-	render() {
-		return (
-			<div className="App">
-				<NavOverlay className={classnames(this.state.visible ? 'overlay slideIn' : 'overlay slideOut')} buttonClick={this.handleOverlay} />
-				<NavBar buttonClick={this.handleOverlay} />
+	useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
 
-				<Switch>
-					<Route exact path="/">
-						<About />
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+    }, [])
 
-						<Clients />
+	return (
+		<div className="App">
+			<NavOverlay className={classnames(visible ? 'overlay slideIn' : 'overlay slideOut')} buttonClick={handleOverlay} />
+			<NavBar buttonClick={handleOverlay} />
 
-						<Skills />
+			<Switch>
+				<Route exact path="/">
+					<About />
 
-						<Projects />
+					<Clients />
 
-						<Qualifications />
+					<Skills />
 
-						<DownloadCV />
+					<Projects />
 
-						<Contact />
-					</Route>
+					<Qualifications />
 
-					<Route path="/bt">
-						<BT />
-					</Route>
+					<DownloadCV />
 
-					<Route path="/santander">
-						<Santander />
-					</Route>
+					<Contact />
+				</Route>
 
-					<Route path="/ford">
-						<Ford />
-					</Route>
-				</Switch>
+				<Route path="/bt">
+					<BT />
+				</Route>
 
-				<ScrollUp buttonClick={this.scrollUp} />
+				<Route path="/santander">
+					<Santander />
+				</Route>
 
-				<div className="footer">
-					<h4>&copy; Dan Higgins 2020</h4>
-				</div>
+				<Route path="/ford">
+					<Ford />
+				</Route>
+			</Switch>
+
+			{showScrollToTop && <ScrollUp buttonClick={scrollUp} />}
+
+			<div className="footer">
+				<h4>&copy; Dan Higgins 2020</h4>
 			</div>
-		);
-	}
+		</div>
+	);
 }

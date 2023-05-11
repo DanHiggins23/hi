@@ -4,7 +4,7 @@ import TextLoop from "react-text-loop";
 import Fade from "react-reveal/Fade";
 import { Link } from 'react-router-dom';
 
-export default function About(props) {
+export default function About() {
     return (
         <div className="section about-me">
             <div className="about-me">
