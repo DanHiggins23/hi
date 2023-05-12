@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d457013.css",
-    "main.js": "/static/js/main.787acf2c.js",
+    "main.css": "/static/css/main.0ab3b157.css",
+    "main.js": "/static/js/main.5041da20.js",
     "static/media/me-lisbon.jpg": "/static/media/me-lisbon.2a6db81e047b99ebe515.jpg",
     "static/media/ford-logo.png": "/static/media/ford-logo.9be5ff1fb57c1dd04400.png",
     "static/media/ford-logo-trans.png": "/static/media/ford-logo-trans.7b6fa655a670e4744c77.png",
     "static/media/DanHiggins.pdf": "/static/media/DanHiggins.3068a3251ba65b6a6034.pdf",
-    "static/media/QA-logo.png": "/static/media/QA-logo.70e418d5601a8709abee.png",
     "static/media/bt-logo.png": "/static/media/bt-logo.a58b5107e6b8c22a8055.png",
     "static/media/teesside-uni.png": "/static/media/teesside-uni.b9fca71fa07c6c5c11a7.png",
     "static/media/santander-logo.png": "/static/media/santander-logo.55a74800a51c4582edc5.png",
     "static/media/thg-logo.png": "/static/media/thg-logo.a5bf7f6b769bc69c6fe9.png",
     "static/media/open-university.png": "/static/media/open-university.bc8cb7fe03548ec9ef94.png",
-    "static/media/nb-logo.png": "/static/media/nb-logo.3004935c035b4f4cf427.png",
     "index.html": "/index.html",
-    "main.6d457013.css.map": "/static/css/main.6d457013.css.map",
-    "main.787acf2c.js.map": "/static/js/main.787acf2c.js.map"
+    "main.0ab3b157.css.map": "/static/css/main.0ab3b157.css.map",
+    "main.5041da20.js.map": "/static/js/main.5041da20.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d457013.css",
-    "static/js/main.787acf2c.js"
+    "static/css/main.0ab3b157.css",
+    "static/js/main.5041da20.js"
   ]
 }
