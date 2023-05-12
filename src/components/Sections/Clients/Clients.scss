@@ -24,7 +24,7 @@
   &__container, &__container--top {
     width: 50%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     display: flex;
     margin: auto;
@@ -52,12 +52,6 @@
     }
     &--bt {
       height: 90px;
-    }
-    &--nb {
-      height: 50px;
-    }
-    &--qa {
-      height: 60px;
     }
     &--ford {
       height: 60px;
@@ -92,11 +86,11 @@
 @media (min-width: $desktop) {
   .clients {
     &__container {
-      width: 80%;
+      width: 750px;
     }
     &__container--top {
       flex-direction: row;
-      width: 65%;
+      width: 550px;
     }
   }
 }
