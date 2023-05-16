@@ -1,42 +1,30 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleDown, faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 import './SkillsItems.scss';
 
-export default class SkillsItem extends Component {
+export default function SkillsItem(props) {
+    const [showText, setShowText] = useState(false);
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            showText: false,
-            aniamte: false
-        }
+    const handleClick = () => {
+        setShowText(prev => !prev);
     }
 
-    handleClick = () => {
-        this.setState({
-            showText: !this.state.showText,
-            animate: !this.state.animate
-        })
-    }
-
-    getStringLength(text) {
-        if (this.state.showText) {
+    const getStringLength = text => {
+        if (showText) {
             return text;
         }
-        return text.slice(0, 115) + "...";
+        return text.slice(0, 100) + "...";
     }
 
-    render() {
-        return (
-            <div className="skills__container-item">
-                <FontAwesomeIcon icon={this.props.icon} />
-                {this.props.imagePath ? <img className="qualifications__image qualifications__image" src={this.props.imagePath} alt={this.props.altText} /> : null}
-                <span className="skills__link">{this.props.title}</span>
-                {this.props.text ?
-                    <p onClick={this.handleClick} className={this.state.showText ? "skills__description skills__test hvr-icon-up" : "skills__description hvr-icon-down"}>{this.getStringLength(this.props.text)}<FontAwesomeIcon icon={this.state.showText ? faArrowAltCircleUp : faArrowAltCircleDown} className="skills__more hvr-icon" onClick={this.handleClick} /></p>
-                    : null}
-            </div>
-        );
-    }
+    return (
+        <div className="skills__container-item">
+            <FontAwesomeIcon icon={props.icon} />
+            {props.imagePath ? <img className="qualifications__image qualifications__image" src={props.imagePath} alt={props.altText} /> : null}
+            <span className="skills__link">{props.title}</span>
+            {props.text ?
+                <p onClick={handleClick} className={showText ? "skills__description skills__test hvr-icon-up" : "skills__description hvr-icon-down"}>{getStringLength(props.text)}<FontAwesomeIcon icon={showText ? faArrowAltCircleUp : faArrowAltCircleDown} className="skills__more hvr-icon" onClick={handleClick} /></p>
+                : null}
+        </div>
+    );
 }

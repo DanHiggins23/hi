@@ -1,38 +1,44 @@
 import React from 'react';
 import Intro from '../../Text/Intro';
-import { faJava, faReact, faSass, faJenkins } from '@fortawesome/free-brands-svg-icons'
-import { faCode, faBug } from '@fortawesome/free-solid-svg-icons';
+import Body from '../../Text/Body';
+import { faReact } from '@fortawesome/free-brands-svg-icons'
+import { faBug, faInfinity, faCode } from '@fortawesome/free-solid-svg-icons';
 import './Skills.scss';
 import SkillsItem from './SkillsItem';
 import Fade from 'react-reveal/Fade';
 
-export default function Skills(props) {
+export default function Skills() {
     return (
         <div className="section skills" >
             <Fade bottom>
                 <Intro title="What can I do? 💻"
-                    description="I'm always learning to expand my skills further. Here's a few examples of what I've been doing recently in the projects I've currently been working on." />
-                <div>
-                    <div className="skills__container">
-                        <SkillsItem icon={faReact}
-                            title="React"
-                            text="I've spent the last 6 months working with an AEM React implementation creating functional and stateful components that are unit tested, documented and example files created. I also created this portfolio in React!" />
-                        <SkillsItem icon={faJava}
-                            title="Java"
-                            text="I've been using Java recently to create sling models for the AEM React components. I've also produced many projects, such as a bank GUI application and a text-based adventure game." />
-                        <SkillsItem icon={faBug}
-                            title="Testing"
-                            text="I have experience using Selenium and Chrome web driver with JUnit to automate processes, as well as using JEST with sinon, React Test and DOM rendered in order to unit test components. More recently, I have also been using Cypress to test an internal node project at Santander efficiently." />
-                        <SkillsItem icon={faCode}
-                            title="HTML &amp; CSS"
-                            text="I've been doing HTML and CSS for a long time now, with knowledge in HTML5 and CSS3, where I've created multiple websites and Javascript projects. I now continue to use it with JSX in React components." />
-                        <SkillsItem icon={faSass}
-                            title="SASS"
-                            text="I've been using SASS as my primary css pre-processor using the BEM notation. I've got very comfortable with this procedure and utlised it in the project I was involved with at BT as well as this portfolio." />
-                        <SkillsItem icon={faJenkins}
-                            title="Jenkins"
-                            text="During my time at Santander I gained a far clearer understanding of Continuous Integration with gitlab and Jenkins, ensuring pipelines passed before deployments and creating new pipelines within Jenkins." />   
-                    </div>
+                    description="My passion is within front-end development, and has been the focus for the majority of my career, I love the creativity aspect of it. Here's some examples of what I can do..." />
+                <div className="skills__container">
+                    <SkillsItem icon={faReact}
+                        title="React"
+                        text="I've been using React for ~4 years now, across a mixture of proffesional and personal projects. Daily I use hooks, context, Redux and Flow JS and also use Axios & Fetch for network requests." />
+                    <SkillsItem icon={faBug}
+                        title="Testing"
+                        text="I've recently been using a combination of React Testing Library & Jest for unit tests. In previous projects, I've used Enzyme, Cypress, JUnit and Selenium." />
+                    <SkillsItem icon={faCode}
+                        title="Styling"
+                        text="Recently, I've mainly been using Javascript style systems, where I've been using Emotion and JSS. I've also developed with MaterialUI components, and extensively used SASS & LESS." />
+                    <SkillsItem icon={faInfinity}
+                        title="CI/CD"
+                        text="Over the past few years I've started to get more involved in CI/CD processes, using CircleCI and Jenkins for release & build processes, as well as integrations with Github & Jira." />
+                </div>
+
+                <Body description="And here's what tech I'm currently using..." />
+                <div className="skills__tech-stack">
+                    <img className="skills__icon" src={require('../../../utils/images/skills/react.png')} alt="React Logo" />
+                    <img className="skills__icon" src={require('../../../utils/images/skills/redux.png')} alt="Redux Logo" />
+                    <img className="skills__icon" src={require('../../../utils/images/skills/rtl.png')} alt="React Testing Library Logo" />
+                    <img className="skills__icon" src={require('../../../utils/images/skills/jest.png')} alt="Jest Logo" />
+                    <img className="skills__icon" src={require('../../../utils/images/skills/emotion.png')} alt="Emotion Logo" />
+                    <img className="skills__icon--lrg" src={require('../../../utils/images/skills/circle-ci.png')} alt="Circle CI Logo" />
+                    <img className="skills__icon--lrg" src={require('../../../utils/images/skills/storybook.png')} alt="Storybook Logo" />
+                    <img className="skills__icon--lrg" src={require('../../../utils/images/skills/flow.png')} alt="Flow Logo" />
+                    <img className="skills__icon--xtra-lrg" src={require('../../../utils/images/skills/axios.png')} alt="Axios Logo" />
                 </div>
             </Fade>
         </div>
