@@ -19,7 +19,7 @@ export default function SkillsItem(props) {
 
     return (
         <div className="skills__container-item">
-            <FontAwesomeIcon icon={props.icon} />
+            {props.icon && <FontAwesomeIcon icon={props.icon} />}
             {props.imagePath ? <img className="qualifications__image qualifications__image" src={props.imagePath} alt={props.altText} /> : null}
             <span className="skills__link">{props.title}</span>
             {props.text ?
