@@ -1,91 +1,91 @@
 @import "../../../../styles/shared";
 
 .projectInfo {
-    &__tile {
-        width: 70%;
-        height: 300px;
-        margin: auto;
-        margin-bottom: 80px;
-        display: flex;
+  &__tile {
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 80px;
+    display: flex;
 
-        &--santander {
-            background-color: $santander-pastel;
-        }
-
-        &--bt {
-            background-color: $bt-pastel;
-        }
-
-        &--ford {
-            background-color: $ford-pastel;
-        }
+    &--santander {
+      background-color: $santander-pastel;
     }
 
-    &__tile-image {
-        margin: auto;
-        transition: ease-in-out 0.4s;
-
-        &--santander {
-            height: 80px;
-        }
-
-        &--bt {
-            height: 100px;
-        }
-
-        &--ford {
-            height: 60px;
-        }
+    &--bt {
+      background-color: $bt-pastel;
     }
 
-    &__tech-container {
-        width: 95%;
-        margin: 60px auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+    &--ford {
+      background-color: $ford-pastel;
+    }
+  }
+
+  &__tile-image {
+    margin: auto;
+    transition: ease-in-out 0.4s;
+
+    &--santander {
+      height: 80px;
     }
 
-    &__tech-icon {
-        font-size: 4em;
-        text-align: center;
-        color: $primary-dark;
+    &--bt {
+      height: 100px;
     }
 
-    &__line {
-        width: 50%;
-        padding-top: 50px;
-        margin: auto;
-        border-bottom: 4px solid $primary-light;
+    &--ford {
+      height: 60px;
     }
+  }
+
+  &__tech-container {
+    width: 95%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__tech-icon {
+    font-size: 4em;
+    text-align: center;
+    color: $primary-dark;
+  }
+
+  &__line {
+    width: 50%;
+    padding-top: 50px;
+    margin: auto;
+    border-bottom: 4px solid $primary-light;
+  }
 }
 
 @media (min-width: $tablet-wide) {
-    .projectInfo {
-        &__tile {
-            width: 40%;
-        }
-
-        &__tile-image {
-            &--santander {
-                height: 100px;
-            }
-    
-            &--bt {
-                height: 120px;
-            }
-    
-            &--ford {
-                height: 80px;
-            }
-        }
-
-        &__tech-container {
-            width: 40%;
-        }
-
-        &__line {
-            width: 300px;
-        }
+  .projectInfo {
+    &__tile {
+      width: 40%;
     }
+
+    &__tile-image {
+      &--santander {
+        height: 100px;
+      }
+
+      &--bt {
+        height: 120px;
+      }
+
+      &--ford {
+        height: 80px;
+      }
+    }
+
+    &__tech-container {
+      width: 40%;
+    }
+
+    &__line {
+      width: 300px;
+    }
+  }
 }

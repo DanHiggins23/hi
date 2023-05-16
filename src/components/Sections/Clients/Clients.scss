@@ -21,7 +21,8 @@
     padding-bottom: 50px;
   }
 
-  &__container, &__container--top {
+  &__container,
+  &__container--top {
     width: 50%;
     flex-direction: column;
     justify-content: space-evenly;

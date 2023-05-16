@@ -1,104 +1,104 @@
 @import "../../../styles/shared";
 
 .back {
-    background: none;
-    border: none;
-    margin: auto;
-    position: absolute;
-    top: 152px;
-    left: 15%;
+  background: none;
+  border: none;
+  margin: auto;
+  position: absolute;
+  top: 152px;
+  left: 15%;
 
-    &__icon {
-        font-size: 2em;
-        text-align: center;
-        color: $primary-dark;
-    }
+  &__icon {
+    font-size: 2em;
+    text-align: center;
+    color: $primary-dark;
+  }
 }
 
 /* Icon Wobble Horizontal */
 @-webkit-keyframes hvr-icon-wobble-horizontal {
-    16.65% {
-        -webkit-transform: translateX(6px);
-        transform: translateX(6px);
-    }
-    33.3% {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    49.95% {
-        -webkit-transform: translateX(4px);
-        transform: translateX(4px);
-    }
-    66.6% {
-        -webkit-transform: translateX(-2px);
-        transform: translateX(-2px);
-    }
-    83.25% {
-        -webkit-transform: translateX(1px);
-        transform: translateX(1px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 @keyframes hvr-icon-wobble-horizontal {
-    16.65% {
-        -webkit-transform: translateX(6px);
-        transform: translateX(6px);
-    }
-    33.3% {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    49.95% {
-        -webkit-transform: translateX(4px);
-        transform: translateX(4px);
-    }
-    66.6% {
-        -webkit-transform: translateX(-2px);
-        transform: translateX(-2px);
-    }
-    83.25% {
-        -webkit-transform: translateX(1px);
-        transform: translateX(1px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 .hvr-icon-wobble-horizontal {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 .hvr-icon-wobble-horizontal .hvr-icon {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .hvr-icon-wobble-horizontal:hover .hvr-icon {
-    -webkit-animation-name: hvr-icon-wobble-horizontal;
-    animation-name: hvr-icon-wobble-horizontal;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
+  -webkit-animation-name: hvr-icon-wobble-horizontal;
+  animation-name: hvr-icon-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 @media (min-width: $tablet-wide) {
-    .back {
-        top: 160px;
-        left: 35%;
+  .back {
+    top: 160px;
+    left: 35%;
 
-        &__icon {
-            font-size: 2.5em;
-        }
+    &__icon {
+      font-size: 2.5em;
     }
+  }
 }
