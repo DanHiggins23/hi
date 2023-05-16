@@ -84,10 +84,10 @@ export default function App() {
 				</Route>
 			</Switch>
 
-			{showScrollToTop && <ScrollUp buttonClick={scrollUp} />}
+			<ScrollUp buttonClick={scrollUp} show={showScrollToTop} />
 
 			<div className="footer">
-				<h4>&copy; Dan Higgins 2020</h4>
+				<h4>&copy; Dan Higgins 2023</h4>
 			</div>
 		</div>
 	);

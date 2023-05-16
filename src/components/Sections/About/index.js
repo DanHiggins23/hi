@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.scss';
-import TextLoop from "react-text-loop";
 import Fade from "react-reveal/Fade";
 import { Link } from 'react-router-dom';
 
@@ -11,12 +10,8 @@ export default function About() {
                 <div className="about-me__title">
                     <Fade bottom>
                         <div>
-                            <span>Hi, I'm</span>
-                            <TextLoop delay="1000" interval="2000">
-                                <span>&nbsp;Dan Higgins</span>
-                                <span>&nbsp;a Developer</span>
-                            </TextLoop>
-                            <span role="img" aria-label="jsx-a11y/aria-proptypes">&nbsp;👋</span>
+                            <span>Hi, I'm Dan Higgins</span>
+                            <span role="img" aria-label="jsx-a11y/aria-proptypes" className='wave'>&nbsp;👋</span>
                         </div>
                     </Fade>
                 </div>
