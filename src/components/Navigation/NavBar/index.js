@@ -1,51 +1,39 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Progress from "../Progress";
 import "./NavBar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-export default class NavBar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      display: false,
-      scrollPosition: 0,
-    };
-  }
+export default function NavBar(props) {
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-  handleClick = () => {
-    this.setState({
-      display: !this.state.display,
-    });
-  };
-
-  listenToScrollEvent = () => {
+  const listenToScrollEvent = () => {
     document.addEventListener("scroll", () => {
       requestAnimationFrame(() => {
-        this.calculateScrollDistance();
+        calculateScrollDistance();
       });
     });
   };
 
-  componentDidMount() {
-    this.listenToScrollEvent();
-  }
+  useEffect(() => {
+    listenToScrollEvent();
+  }, []);
 
-  calculateScrollDistance = () => {
+  const calculateScrollDistance = () => {
     const scrollTop = window.pageYOffset;
     const windowHeight = window.innerHeight;
-    const docHeight = this.getDocHeight();
+    const docHeight = getDocHeight();
 
     const totalDocScrollLength = docHeight - windowHeight;
-    const scrollPosition = Math.ceil((scrollTop / totalDocScrollLength) * 100);
+    const scrollPositionCalc = Math.ceil(
+      (scrollTop / totalDocScrollLength) * 100
+    );
 
-    this.setState({
-      scrollPosition,
-    });
+    setScrollPosition(scrollPositionCalc);
   };
 
-  getDocHeight = () => {
+  const getDocHeight = () => {
     return Math.max(
       document.body.scrollHeight,
       document.documentElement.scrollHeight,
@@ -56,51 +44,49 @@ export default class NavBar extends Component {
     );
   };
 
-  render() {
-    return (
-      <div>
-        <div className="nav">
-          <Link className="nav__logo" to="/">
-            <h1>Dan Higgins</h1>
-          </Link>
-          <Link className="nav__logo--mobile" to="/">
-            <h1>DH</h1>
-          </Link>
+  return (
+    <>
+      <div className="nav">
+        <Link className="nav__logo" to="/">
+          <h1>Dan Higgins</h1>
+        </Link>
+        <Link className="nav__logo--mobile" to="/">
+          <h1>DH</h1>
+        </Link>
 
-          <ul className="nav__list">
-            <li className="nav__list-items nav__list-items--desktop">
-              <a
-                className="nav__list-items-link"
-                href="https://www.linkedin.com/in/danhiggins23"
-              >
-                Linked In
-              </a>
-            </li>
-            <li className="nav__list-items nav__list-items--desktop">
-              <a
-                className="nav__list-items-link"
-                href="https://github.com/DanHiggins23"
-              >
-                GitHub
-              </a>
-            </li>
-            <li className="nav__list-items nav__list-items--desktop">
-              <a
-                className="nav__list-items-link"
-                href="mailto:danhiggins23@outlook.com"
-              >
-                <FontAwesomeIcon icon={faEnvelope} />
-              </a>
-            </li>
-          </ul>
-          <FontAwesomeIcon
-            onClick={this.props.buttonClick}
-            className="nav__hamburger"
-            icon={faBars}
-          />
-        </div>
-        <Progress scroll={this.state.scrollPosition + "%"} />
+        <ul className="nav__list">
+          <li className="nav__list-items nav__list-items--desktop">
+            <a
+              className="nav__list-items-link"
+              href="https://www.linkedin.com/in/danhiggins23"
+            >
+              Linked In
+            </a>
+          </li>
+          <li className="nav__list-items nav__list-items--desktop">
+            <a
+              className="nav__list-items-link"
+              href="https://github.com/DanHiggins23"
+            >
+              GitHub
+            </a>
+          </li>
+          <li className="nav__list-items nav__list-items--desktop">
+            <a
+              className="nav__list-items-link"
+              href="mailto:danhiggins23@outlook.com"
+            >
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a>
+          </li>
+        </ul>
+        <FontAwesomeIcon
+          onClick={props.buttonClick}
+          className="nav__hamburger"
+          icon={faBars}
+        />
       </div>
-    );
-  }
+      <Progress scroll={scrollPosition + "%"} />
+    </>
+  );
 }
