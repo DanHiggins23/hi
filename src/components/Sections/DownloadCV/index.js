@@ -1,9 +1,9 @@
-import React from "react";
-import "./DownloadCV.scss";
-import pdf from "../../../utils/pdf/DanHiggins.pdf";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import './DownloadCV.scss';
+import Fade from 'react-reveal/Fade';
+import pdf from '../../../utils/pdf/DanHiggins.pdf';
 
-export default function DownloadCV(props) {
+export default function DownloadCV() {
   return (
     <div className="download-cv">
       <Fade bottom>

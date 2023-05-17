@@ -1,9 +1,9 @@
-import React from "react";
-import "./NavOverlay.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './NavOverlay.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 export default function NavOverlay(props) {
   return (

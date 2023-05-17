@@ -1,13 +1,13 @@
-import React from "react";
-import "../ProjectInfo.scss";
-import Fade from "react-reveal";
-import Intro from "../../../../Text/Intro";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Body from "../../../../Text/Body";
-import Back from "../../../../Navigation/Back";
-import { faPhone, faTasks, faServer } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import '../ProjectInfo.scss';
+import Fade from 'react-reveal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faTasks, faServer } from '@fortawesome/free-solid-svg-icons';
+import Intro from '../../../../Text/Intro';
+import Body from '../../../../Text/Body';
+import Back from '../../../../Navigation/Back';
 
-export default function Ford(props) {
+export default function Ford() {
   return (
     <div className="section projectInfo">
       <Fade>
@@ -23,7 +23,7 @@ export default function Ford(props) {
         <div className="projectInfo__tile projectInfo__tile--ford">
           <img
             className="projectInfo__tile-image projectInfo__tile-image--ford"
-            src={require("../../../../../utils/images/clients/ford-logo-trans.png")}
+            src="/images/clients/ford-logo-trans.png"
             alt="Ford Logo"
           />
         </div>
@@ -39,7 +39,7 @@ export default function Ford(props) {
           description="As Ford was my first proper placement and my first taste of working life, I learnt a vast amount. I really developed my ability to develop relationships with colleagues and clients, especially over the phone. A lot of our team worked in the United States, and therefore I never got to meet them face to face. However, taking the time to chat with each team member at the start of each meeting really allowed me to get to know them. As I solely managed a pilot project, it was a great opportunity to put to use my leadership skills - which I really enjoyed."
         />
 
-        <div className="projectInfo__line"></div>
+        <div className="projectInfo__line" />
       </Fade>
 
       <Back />

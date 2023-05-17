@@ -1,10 +1,10 @@
-import React from "react";
-import Intro from "../../Text/Intro";
-import "./Projects.scss";
-import Fade from "react-reveal/Fade";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './Projects.scss';
+import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
+import Intro from '../../Text/Intro';
 
-export default function Projects(props) {
+export default function Projects() {
   return (
     <div className="section projects">
       <Fade bottom>
@@ -17,7 +17,7 @@ export default function Projects(props) {
             <Link className="projects__tile-image" to="/santander">
               <img
                 className="projects__tile-image projects__tile-image--santander"
-                src={require("../../../utils/images/clients/santander-logo.png")}
+                src="/images/clients/santander-logo.png"
                 alt="Santander Logo"
               />
             </Link>
@@ -26,7 +26,7 @@ export default function Projects(props) {
             <Link className="projects__tile-image" to="/ford">
               <img
                 className="projects__tile-image projects__tile-image--ford"
-                src={require("../../../utils/images/clients/ford-logo-trans.png")}
+                src="/images/clients/ford-logo-trans.png"
                 alt="BT Logo"
               />
             </Link>
@@ -35,7 +35,7 @@ export default function Projects(props) {
             <Link className="projects__tile-image" to="/bt">
               <img
                 className="projects__tile-image--bt"
-                src={require("../../../utils/images/clients/bt-logo.png")}
+                src="/images/clients/bt-logo.png"
                 alt="BT Logo"
               />
             </Link>

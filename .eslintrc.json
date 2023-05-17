@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb", "airbnb-typescript"],
+  "extends": ["airbnb"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "arrow-parens": ["warn", "as-needed"],
@@ -8,7 +8,6 @@
     "react/no-unused-prop-types": "off",
     "react/prop-types": 1,
     "no-unused-vars": "warn",
-    "@typescript-eslint/no-unused-vars": "warn",
     "no-console": "warn",
     "react/forbid-prop-types": "warn",
     "react/jsx-filename-extension": [

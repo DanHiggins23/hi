@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowAltCircleDown,
   faArrowAltCircleUp,
-} from "@fortawesome/free-solid-svg-icons";
-import "./SkillsItems.scss";
+} from '@fortawesome/free-solid-svg-icons';
+import './SkillsItems.scss';
 
 export default function SkillsItem(props) {
   const [showText, setShowText] = useState(false);
 
   const handleClick = () => {
-    setShowText((prev) => !prev);
+    setShowText(prev => !prev);
   };
 
-  const getStringLength = (text) => {
+  const getStringLength = text => {
     if (showText) {
       return text;
     }
-    return text.slice(0, 100) + "...";
+    return `${text.slice(0, 100)}...`;
   };
 
   return (
@@ -32,21 +32,22 @@ export default function SkillsItem(props) {
       ) : null}
       <span className="skills__link">{props.title}</span>
       {props.text ? (
-        <p
-          onClick={handleClick}
-          className={
+        <button onClick={handleClick} type="button" className="skills__button">
+          <p
+            className={
             showText
-              ? "skills__description skills__test hvr-icon-up"
-              : "skills__description hvr-icon-down"
+              ? 'skills__description skills__test hvr-icon-up'
+              : 'skills__description hvr-icon-down'
           }
-        >
-          {getStringLength(props.text)}
-          <FontAwesomeIcon
-            icon={showText ? faArrowAltCircleUp : faArrowAltCircleDown}
-            className="skills__more hvr-icon"
-            onClick={handleClick}
-          />
-        </p>
+          >
+            {getStringLength(props.text)}
+            <FontAwesomeIcon
+              icon={showText ? faArrowAltCircleUp : faArrowAltCircleDown}
+              className="skills__more hvr-icon"
+              onClick={handleClick}
+            />
+          </p>
+        </button>
       ) : null}
     </div>
   );

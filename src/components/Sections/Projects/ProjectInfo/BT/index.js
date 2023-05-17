@@ -1,13 +1,13 @@
-import React from "react";
-import "../ProjectInfo.scss";
-import Fade from "react-reveal";
-import Intro from "../../../../Text/Intro";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Body from "../../../../Text/Body";
-import { faJava, faReact } from "@fortawesome/free-brands-svg-icons";
-import Back from "../../../../Navigation/Back";
+import React from 'react';
+import '../ProjectInfo.scss';
+import Fade from 'react-reveal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJava, faReact } from '@fortawesome/free-brands-svg-icons';
+import Intro from '../../../../Text/Intro';
+import Body from '../../../../Text/Body';
+import Back from '../../../../Navigation/Back';
 
-export default function BT(props) {
+export default function BT() {
   return (
     <div className="section projectInfo">
       <Fade>
@@ -19,7 +19,7 @@ export default function BT(props) {
         <div className="projectInfo__tile projectInfo__tile--bt">
           <img
             className="projectInfo__tile-image projectInfo__tile-image--bt"
-            src={require("../../../../../utils/images/clients/bt-logo.png")}
+            src="/images/clients/bt-logo.png"
             alt="BT Logo"
           />
         </div>
@@ -39,7 +39,7 @@ export default function BT(props) {
           description="At this point, the majority of technologies were fairly new to me. I’d begun to learn them all during my training at QA, but had no real-life experience with them. I feel like my skills in multiple technologies really developed throughout my time at BT. Working with a full-stack technology helped me understand how all the “pieces” go together. In Addition to this, working very closely with other members in my team, I was heavily involved in the process from conception to UX, to UI, to development. This I really enjoyed."
         />
 
-        <div className="projectInfo__line"></div>
+        <div className="projectInfo__line" />
       </Fade>
 
       <Back />

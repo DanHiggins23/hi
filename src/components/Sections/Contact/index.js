@@ -1,12 +1,12 @@
-import React from "react";
-import "./Contact.scss";
-import Intro from "../../Text/Intro";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import './Contact.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import Fade from 'react-reveal/Fade';
+import Intro from '../../Text/Intro';
 
-export default function Contact(props) {
+export default function Contact() {
   return (
     <div className="section contact-me">
       <Fade bottom>

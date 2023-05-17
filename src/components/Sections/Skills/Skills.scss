@@ -85,6 +85,11 @@
       cursor: pointer;
     }
   }
+
+  &__button {
+    background: none;
+    border: none;
+  }
 }
 
 @media (min-width: $mobile-wide) {

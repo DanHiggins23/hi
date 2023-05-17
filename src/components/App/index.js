@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from "react";
-import NavBar from "../Navigation/NavBar";
-import Contact from "../Sections/Contact";
-import "./App.scss";
-import "../../styles/_shared.scss";
-import NavOverlay from "../Navigation/NavOverlay";
-import classnames from "classnames";
-import DownloadCV from "../Sections/DownloadCV";
-import About from "../Sections/About";
-import Clients from "../Sections/Clients";
-import Projects from "../Sections/Projects";
-import Skills from "../Sections/Skills";
-import Qualifications from "../Sections/Qualifications";
-import { Route, Switch } from "react-router-dom";
-import BT from "../Sections/Projects/ProjectInfo/BT";
-import Santander from "../Sections/Projects/ProjectInfo/Santander";
-import Ford from "../Sections/Projects/ProjectInfo/Ford";
-import ScrollUp from "../Navigation/ScrollUp";
+import React, { useEffect, useState } from 'react';
+import classnames from 'classnames';
+import { Route, Switch } from 'react-router-dom';
+import NavBar from '../Navigation/NavBar';
+import Contact from '../Sections/Contact';
+import './App.scss';
+import '../../styles/_shared.scss';
+import NavOverlay from '../Navigation/NavOverlay';
+import DownloadCV from '../Sections/DownloadCV';
+import About from '../Sections/About';
+import Clients from '../Sections/Clients';
+import Projects from '../Sections/Projects';
+import Skills from '../Sections/Skills';
+import Qualifications from '../Sections/Qualifications';
+import BT from '../Sections/Projects/ProjectInfo/BT';
+import Santander from '../Sections/Projects/ProjectInfo/Santander';
+import Ford from '../Sections/Projects/ProjectInfo/Ford';
+import ScrollUp from '../Navigation/ScrollUp';
 
 export default function App() {
   const [visible, setVisible] = useState(false);
@@ -29,14 +29,14 @@ export default function App() {
 
   const handleOverlay = () => {
     setVisible(
-      (previousValue) => !previousValue,
+      previousValue => !previousValue,
       () => {
         if (visible) {
-          document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+          document.getElementsByTagName('html')[0].style.overflowY = 'hidden';
         } else {
-          document.getElementsByTagName("html")[0].style.overflowY = "auto";
+          document.getElementsByTagName('html')[0].style.overflowY = 'auto';
         }
-      }
+      },
     );
   };
 
@@ -45,17 +45,17 @@ export default function App() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
     <div className="App">
       <NavOverlay
-        className={classnames(visible ? "overlay slideIn" : "overlay slideOut")}
+        className={classnames(visible ? 'overlay slideIn' : 'overlay slideOut')}
         buttonClick={handleOverlay}
       />
       <NavBar buttonClick={handleOverlay} />

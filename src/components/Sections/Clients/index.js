@@ -1,7 +1,7 @@
-import React from "react";
-import Intro from "../../Text/Intro";
-import "./Clients.scss";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import Intro from '../../Text/Intro';
+import './Clients.scss';
 
 export default function Clients() {
   return (
@@ -15,12 +15,12 @@ export default function Clients() {
         <div className="clients__container--top">
           <img
             className="clients__image clients__image--kitman"
-            src={require("../../../utils/images/clients/kitman-logo.png")}
+            src="/images/clients/kitman-logo.png"
             alt="Kitman Labs Logo"
           />
           <img
             className="clients__image clients__image--thg"
-            src={require("../../../utils/images/clients/thg-logo.png")}
+            src="/images/clients/thg-logo.png"
             alt="THG Logo"
           />
         </div>
@@ -28,17 +28,17 @@ export default function Clients() {
         <div className="clients__container">
           <img
             className="clients__image clients__image--santander"
-            src={require("../../../utils/images/clients/santander-logo.png")}
+            src="/images/clients/santander-logo.png"
             alt="Santander Logo"
           />
           <img
             className="clients__image clients__image--bt"
-            src={require("../../../utils/images/clients/bt-logo.png")}
+            src="/images/clients/bt-logo.png"
             alt="BT Logo"
           />
           <img
             className="clients__image clients__image--ford"
-            src={require("../../../utils/images/clients/ford-logo.png")}
+            src="/images/clients/ford-logo.png"
             alt="Ford Logo"
           />
         </div>

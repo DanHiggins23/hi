@@ -1,15 +1,37 @@
-import React, { useState, useEffect } from "react";
-import Progress from "../Progress";
-import "./NavBar.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import './NavBar.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import Progress from '../Progress';
 
 export default function NavBar(props) {
   const [scrollPosition, setScrollPosition] = useState(0);
 
+  const getDocHeight = () => Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.offsetHeight,
+    document.body.clientHeight,
+    document.documentElement.clientHeight,
+  );
+
+  const calculateScrollDistance = () => {
+    const scrollTop = window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const docHeight = getDocHeight();
+
+    const totalDocScrollLength = docHeight - windowHeight;
+    const scrollPositionCalc = Math.ceil(
+      (scrollTop / totalDocScrollLength) * 100,
+    );
+
+    setScrollPosition(scrollPositionCalc);
+  };
+
   const listenToScrollEvent = () => {
-    document.addEventListener("scroll", () => {
+    document.addEventListener('scroll', () => {
       requestAnimationFrame(() => {
         calculateScrollDistance();
       });
@@ -19,30 +41,6 @@ export default function NavBar(props) {
   useEffect(() => {
     listenToScrollEvent();
   }, []);
-
-  const calculateScrollDistance = () => {
-    const scrollTop = window.pageYOffset;
-    const windowHeight = window.innerHeight;
-    const docHeight = getDocHeight();
-
-    const totalDocScrollLength = docHeight - windowHeight;
-    const scrollPositionCalc = Math.ceil(
-      (scrollTop / totalDocScrollLength) * 100
-    );
-
-    setScrollPosition(scrollPositionCalc);
-  };
-
-  const getDocHeight = () => {
-    return Math.max(
-      document.body.scrollHeight,
-      document.documentElement.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.offsetHeight,
-      document.body.clientHeight,
-      document.documentElement.clientHeight
-    );
-  };
 
   return (
     <>
@@ -86,7 +84,7 @@ export default function NavBar(props) {
           icon={faBars}
         />
       </div>
-      <Progress scroll={scrollPosition + "%"} />
+      <Progress scroll={`${scrollPosition}%`} />
     </>
   );
 }

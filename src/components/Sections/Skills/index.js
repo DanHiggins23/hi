@@ -1,11 +1,11 @@
-import React from "react";
-import Intro from "../../Text/Intro";
-import Body from "../../Text/Body";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import { faBug, faInfinity, faCode } from "@fortawesome/free-solid-svg-icons";
-import "./Skills.scss";
-import SkillsItem from "./SkillsItem";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBug, faInfinity, faCode } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
+import Intro from '../../Text/Intro';
+import Body from '../../Text/Body';
+import './Skills.scss';
+import SkillsItem from './SkillsItem';
 
 export default function Skills() {
   return (
@@ -42,48 +42,48 @@ export default function Skills() {
         <div className="skills__tech-stack">
           <img
             className="skills__icon"
-            src={require("../../../utils/images/skills/react.png")}
+            src="/images/skills/react.png"
             alt="React Logo"
           />
           <img
             className="skills__icon"
-            src={require("../../../utils/images/skills/redux.png")}
+            src="/images/skills/redux.png"
             alt="Redux Logo"
           />
           <img
             className="skills__icon"
-            src={require("../../../utils/images/skills/rtl.png")}
+            src="/images/skills/rtl.png"
             alt="React Testing Library Logo"
           />
           <img
             className="skills__icon"
-            src={require("../../../utils/images/skills/jest.png")}
+            src="/images/skills/jest.png"
             alt="Jest Logo"
           />
           <img
             className="skills__icon"
-            src={require("../../../utils/images/skills/emotion.png")}
+            src="/images/skills/emotion.png"
             alt="Emotion Logo"
           />
           <img
             className="skills__icon--lrg"
-            src={require("../../../utils/images/skills/circle-ci.png")}
-            alt="Circle CI Logo"
-          />
-          <img
-            className="skills__icon--lrg"
-            src={require("../../../utils/images/skills/storybook.png")}
+            src="/images/skills/storybook.png"
             alt="Storybook Logo"
           />
           <img
             className="skills__icon--lrg"
-            src={require("../../../utils/images/skills/flow.png")}
+            src="/images/skills/flow.png"
             alt="Flow Logo"
           />
           <img
             className="skills__icon--xtra-lrg"
-            src={require("../../../utils/images/skills/axios.png")}
+            src="/images/skills/axios.png"
             alt="Axios Logo"
+          />
+          <img
+            className="skills__icon--lrg"
+            src="/images/skills/circle-ci.png"
+            alt="Circle CI Logo"
           />
         </div>
       </Fade>

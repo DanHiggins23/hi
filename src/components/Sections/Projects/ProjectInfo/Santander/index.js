@@ -1,14 +1,14 @@
-import React from "react";
-import "../ProjectInfo.scss";
-import Fade from "react-reveal";
-import Intro from "../../../../Text/Intro";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Body from "../../../../Text/Body";
-import { faJava, faAngular } from "@fortawesome/free-brands-svg-icons";
-import { faBug } from "@fortawesome/free-solid-svg-icons";
-import Back from "../../../../Navigation/Back";
+import React from 'react';
+import '../ProjectInfo.scss';
+import Fade from 'react-reveal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJava, faAngular } from '@fortawesome/free-brands-svg-icons';
+import { faBug } from '@fortawesome/free-solid-svg-icons';
+import Body from '../../../../Text/Body';
+import Intro from '../../../../Text/Intro';
+import Back from '../../../../Navigation/Back';
 
-export default function Santander(props) {
+export default function Santander() {
   return (
     <div className="section projectInfo">
       <Fade>
@@ -20,7 +20,7 @@ export default function Santander(props) {
         <div className="projectInfo__tile projectInfo__tile--santander">
           <img
             className="projectInfo__tile-image projectInfo__tile-image--santander"
-            src={require("../../../../../utils/images/clients/santander-logo.png")}
+            src="/images/clients/santander-logo.png"
             alt="Santander Logo"
           />
         </div>
@@ -44,7 +44,7 @@ export default function Santander(props) {
           description="I learnt a lot during my time at Santander. Although I had already had become very familiar with the Agile way of working, it was very great to gain further experience and adapt to a new, more structured enviroment and way of working at a Bank. I really enjoyed learning the Cypress framework and thought it was a great way to really understand the details of the internal project that I was to working on. Although I used Java within AEM at BT, it was great to gain further knowledge of creating micro-services and testing them with Postman which I had little prior experience with."
         />
 
-        <div className="projectInfo__line"></div>
+        <div className="projectInfo__line" />
       </Fade>
 
       <Back />
