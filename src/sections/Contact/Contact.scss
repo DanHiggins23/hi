@@ -1,0 +1,37 @@
+@import "../../styles/shared";
+
+.contact-me {
+  background-color: white;
+
+  &__container {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+
+    &-item {
+      font-size: 3.5em;
+      text-align: center;
+      width: calc(100% / 3);
+      padding-bottom: 20px;
+    }
+  }
+
+  &__icon {
+    color: $primary-dark;
+  }
+}
+
+@media (min-width: $tablet) {
+  .contact-me__container {
+    &-item {
+      font-size: 4em;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .contact-me__container {
+    max-width: 30%;
+  }
+}

@@ -1,0 +1,134 @@
+@import "../../styles/shared";
+
+.ford-underline {
+  border-bottom: 5px solid #1351d8;
+  background: linear-gradient(to bottom, #1351d8 0, #1351d8 100%);
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0 0;
+}
+
+.bt-underline {
+  border-bottom: 5px solid #553a99;
+  background: linear-gradient(to bottom, #553a99 0, #553a99 100%);
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0 0;
+}
+
+.santander-underline {
+  border-bottom: 5px solid #ec0000;
+  background: linear-gradient(to bottom, #ec0000 0, #ec0000 100%);
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0 0;
+}
+
+.ford-underline:hover,
+.bt-underline:hover,
+.santander-underline:hover {
+  background-size: 0.625rem 3.125rem;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.about-me {
+  font-family: $body;
+  text-align: center;
+
+  &__title {
+    font-size: $mobile-h1;
+    line-height: 40px;
+    margin: 0px $mobile-gutter;
+    padding-bottom: 40px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: $mobile-h3;
+    line-height: 30px;
+    margin: 0px $mobile-gutter;
+    padding-bottom: 50px;
+  }
+
+  &__image {
+    height: auto;
+    margin: auto;
+    display: block;
+    max-width: 75%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .about-me {
+    &__title {
+      font-size: $tablet-h1;
+      margin: 0px $tablet-gutter;
+    }
+
+    &__description {
+      font-size: $tablet-h3;
+      margin: 0px 110px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .about-me {
+    &__title {
+      font-size: $desktop-h1;
+      line-height: 40px;
+      width: 50%;
+      margin: auto;
+    }
+
+    &__description {
+      font-size: $desktop-h3;
+      width: 40%;
+      margin: auto;
+    }
+
+    &__image {
+      max-width: 45%;
+    }
+  }
+}

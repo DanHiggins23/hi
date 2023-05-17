@@ -1,0 +1,97 @@
+@import "../../styles/shared";
+
+.clients {
+  background-color: $light-grey;
+
+  .title {
+    padding-bottom: 40px;
+
+    &__border {
+      display: none;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-family: $body;
+    font-size: $desktop-h4;
+    line-height: 30px;
+    margin: auto;
+    margin: 0px 50px;
+    padding-bottom: 50px;
+  }
+
+  &__container,
+  &__container--top {
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    padding: 20px 0px;
+  }
+
+  &__image {
+    filter: grayscale(100%);
+    object-fit: scale-down;
+    margin-bottom: 80px;
+    transition: ease-out 0.5s;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    &--kitman {
+      height: 45px;
+    }
+    &--thg {
+      height: 80px;
+    }
+    &--santander {
+      height: 90px;
+    }
+    &--bt {
+      height: 90px;
+    }
+    &--ford {
+      height: 60px;
+    }
+
+    &:hover {
+      filter: grayscale(0%);
+      cursor: pointer;
+      transition: ease-in 0.3s;
+    }
+  }
+}
+
+@media (min-width: $tablet-wide) {
+  .clients {
+    &__description {
+      width: 50%;
+      margin: auto;
+    }
+
+    &__container {
+      flex-direction: row;
+      width: 80%;
+    }
+
+    &__image {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .clients {
+    &__container {
+      width: 800px;
+    }
+    &__container--top {
+      flex-direction: row;
+      width: 600px;
+    }
+  }
+}
