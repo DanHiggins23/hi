@@ -1,28 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.1405f357.css",
-    "main.js": "/static/js/main.690c44d9.js",
-    "static/media/me-lisbon.jpg": "/static/media/me-lisbon.2a6db81e047b99ebe515.jpg",
-    "static/media/ford-logo.png": "/static/media/ford-logo.9be5ff1fb57c1dd04400.png",
-    "static/media/ford-logo-trans.png": "/static/media/ford-logo-trans.7b6fa655a670e4744c77.png",
-    "static/media/react.png": "/static/media/react.8a6fc0a24a800d1e0f4a.png",
+    "main.css": "/static/css/main.da7d5492.css",
+    "main.js": "/static/js/main.532d195a.js",
     "static/media/DanHiggins.pdf": "/static/media/DanHiggins.3068a3251ba65b6a6034.pdf",
-    "static/media/bt-logo.png": "/static/media/bt-logo.a58b5107e6b8c22a8055.png",
-    "static/media/flow.png": "/static/media/flow.58ad4f9a99e75ef42bb4.png",
-    "static/media/circle-ci.png": "/static/media/circle-ci.b8b5f7a8f032031a3aee.png",
-    "static/media/teesside-uni.png": "/static/media/teesside-uni.b9fca71fa07c6c5c11a7.png",
-    "static/media/santander-logo.png": "/static/media/santander-logo.55a74800a51c4582edc5.png",
-    "static/media/axios.png": "/static/media/axios.88b12119532d7b12cb42.png",
-    "static/media/thg-logo.png": "/static/media/thg-logo.a5bf7f6b769bc69c6fe9.png",
-    "static/media/open-university.png": "/static/media/open-university.bc8cb7fe03548ec9ef94.png",
-    "static/media/storybook.png": "/static/media/storybook.94667d58429f9563aab7.png",
-    "static/media/redux.png": "/static/media/redux.b3b939c66aecf7d53967.png",
     "index.html": "/index.html",
-    "main.1405f357.css.map": "/static/css/main.1405f357.css.map",
-    "main.690c44d9.js.map": "/static/js/main.690c44d9.js.map"
+    "main.da7d5492.css.map": "/static/css/main.da7d5492.css.map",
+    "main.532d195a.js.map": "/static/js/main.532d195a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1405f357.css",
-    "static/js/main.690c44d9.js"
+    "static/css/main.da7d5492.css",
+    "static/js/main.532d195a.js"
   ]
 }
