@@ -23,7 +23,9 @@ export default function App() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
 
   const handleScroll = () => {
-    if (window.pageYOffset > 1000) {
+    if (window.pageYOffset <= 1000) {
+      document.getElementsByClassName('about-me__image')[0].style.borderRadius = `${window.pageYOffset / 5}%`;
+    } if (window.pageYOffset > 1000) {
       setShowScrollToTop(true);
     } else setShowScrollToTop(false);
   };
