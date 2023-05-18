@@ -40,7 +40,7 @@ export default function About() {
               <Link to="/santander">Santander</Link>
             </span>
             {' '}
-            for the last few years. Have a look what I&apos;ve been up to!
+            over the last few years. Have a look what I&apos;ve been up to!
           </h3>
         </Fade>
       </div>

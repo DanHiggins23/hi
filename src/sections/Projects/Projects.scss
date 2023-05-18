@@ -10,7 +10,7 @@
     margin: auto;
     width: 75%;
     height: 600px;
-    margin-bottom: 25px;
+    gap: 25px;
   }
 
   &__tile {
@@ -36,6 +36,10 @@
     &--ford {
       background-color: $ford-pastel;
     }
+
+    &--thg {
+      background-color: $thg-pastel;
+    }
   }
 
   &__tile-image {
@@ -52,6 +56,10 @@
     &--ford {
       height: 50px;
     }
+
+    &--thg {
+      height: 80px;
+    }
   }
 }
 
@@ -61,33 +69,26 @@
     &__tile-container {
       flex-direction: row;
       flex-wrap: wrap;
+      gap: 25px;
     }
 
     &__tile {
       width: calc(90% / 2);
       height: 400px;
       flex-grow: 1;
-
-      &:first-child {
-        margin-bottom: 25px;
-      }
-
-      &--santander {
-        margin-right: 25px;
-      }
     }
 
     &__tile-image {
       &--santander {
-        height: 120px;
+        height: 100px;
       }
 
       &--bt {
-        height: 150px;
+        height: 90px;
       }
 
       &--ford {
-        height: 90px;
+        height: 70px;
       }
     }
   }

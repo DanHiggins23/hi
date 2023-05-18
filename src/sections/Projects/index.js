@@ -10,36 +10,45 @@ export default function Projects() {
       <Fade bottom>
         <Intro
           title="What have I been doing? 👨‍💻"
-          description="Want to see what I've been up to? Click any tile to have a look at the projects I've been involved in with my biggest clients."
+          description="Want to see what I've been up to? Click any tile to have a look at what I've been up to."
         />
         <div className="projects__tile-container">
-          <div className="projects__tile projects__tile--santander">
-            <Link className="projects__tile-image" to="/santander">
+          <Link className="projects__tile projects__tile--thg" to="/thg">
+            <div className="projects__tile-image">
               <img
-                className="projects__tile-image projects__tile-image--santander"
+                className="projects__tile-image projects__tile-image--thg"
+                src="/images/clients/thg-logo.png"
+                alt="THG Logo"
+              />
+            </div>
+          </Link>
+          <Link className="projects__tile projects__tile--santander" to="/santander">
+            <div className="projects__tile-image">
+              <img
+                className="projects__tile-image--santander"
                 src="/images/clients/santander-logo.png"
                 alt="Santander Logo"
               />
-            </Link>
-          </div>
-          <div className="projects__tile projects__tile--ford">
-            <Link className="projects__tile-image" to="/ford">
+            </div>
+          </Link>
+          <Link className="projects__tile projects__tile--bt" to="/bt">
+            <div className="projects__tile-image">
               <img
-                className="projects__tile-image projects__tile-image--ford"
-                src="/images/clients/ford-logo-trans.png"
-                alt="BT Logo"
-              />
-            </Link>
-          </div>
-          <div className="projects__tile projects__tile--bt">
-            <Link className="projects__tile-image" to="/bt">
-              <img
-                className="projects__tile-image--bt"
+                className="projects__tile-image projects__tile-image--bt"
                 src="/images/clients/bt-logo.png"
                 alt="BT Logo"
               />
-            </Link>
-          </div>
+            </div>
+          </Link>
+          <Link className="projects__tile projects__tile--ford" to="/ford">
+            <div className="projects__tile-image">
+              <img
+                className="projects__tile-image--ford"
+                src="/images/clients/ford-logo-trans.png"
+                alt="Santander Logo"
+              />
+            </div>
+          </Link>
         </div>
       </Fade>
     </div>

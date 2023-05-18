@@ -19,6 +19,10 @@
     &--ford {
       background-color: $ford-pastel;
     }
+
+    &--thg {
+      background-color: $thg-pastel;
+    }
   }
 
   &__tile-image {
@@ -35,6 +39,10 @@
 
     &--ford {
       height: 60px;
+    }
+
+    &--thg {
+      height: 80px;
     }
   }
 

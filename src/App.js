@@ -15,6 +15,7 @@ import Qualifications from './sections/Qualifications';
 import BT from './sections/Projects/ProjectInfo/BT';
 import Santander from './sections/Projects/ProjectInfo/Santander';
 import Ford from './sections/Projects/ProjectInfo/Ford';
+import THG from './sections/Projects/ProjectInfo/THG';
 import ScrollUp from './components/Navigation/ScrollUp';
 
 export default function App() {
@@ -87,6 +88,10 @@ export default function App() {
 
         <Route path="/ford">
           <Ford />
+        </Route>
+
+        <Route path="/thg">
+          <THG />
         </Route>
       </Switch>
 
