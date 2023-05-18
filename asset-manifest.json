@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.760c153b.css",
-    "main.js": "/static/js/main.b8facad5.js",
+    "main.css": "/static/css/main.1b0430f8.css",
+    "main.js": "/static/js/main.d798a18b.js",
     "static/media/DanHiggins.pdf": "/static/media/DanHiggins.3068a3251ba65b6a6034.pdf",
     "index.html": "/index.html",
-    "main.760c153b.css.map": "/static/css/main.760c153b.css.map",
-    "main.b8facad5.js.map": "/static/js/main.b8facad5.js.map"
+    "main.1b0430f8.css.map": "/static/css/main.1b0430f8.css.map",
+    "main.d798a18b.js.map": "/static/js/main.d798a18b.js.map"
   },
   "entrypoints": [
-    "static/css/main.760c153b.css",
-    "static/js/main.b8facad5.js"
+    "static/css/main.1b0430f8.css",
+    "static/js/main.d798a18b.js"
   ]
 }
