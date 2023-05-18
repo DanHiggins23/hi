@@ -58,7 +58,7 @@ export default function NavBar(props) {
               className="nav__list-items-link"
               href="https://www.linkedin.com/in/danhiggins23"
             >
-              Linked In
+              LinkedIn
             </a>
           </li>
           <li className="nav__list-items nav__list-items--desktop">

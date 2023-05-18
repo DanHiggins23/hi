@@ -23,15 +23,15 @@ export default function SkillsItem(props) {
   return (
     <div className="skills__container-item">
       {props.icon && <FontAwesomeIcon icon={props.icon} />}
-      {props.imagePath ? (
+      {props.imagePath && (
         <img
           className="qualifications__image qualifications__image"
           src={props.imagePath}
           alt={props.altText}
         />
-      ) : null}
-      <span className="skills__link">{props.title}</span>
-      {props.text ? (
+      )}
+      <span className="skills__link">{props.titleLink ? <a className="skills__link-a" href={props.titleLink}>{props.title}</a> : props.title}</span>
+      {props.text && (
         <button onClick={handleClick} type="button" className="skills__button">
           <p
             className={
@@ -48,7 +48,7 @@ export default function SkillsItem(props) {
             />
           </p>
         </button>
-      ) : null}
+      )}
     </div>
   );
 }

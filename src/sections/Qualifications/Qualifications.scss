@@ -29,7 +29,7 @@
   &__image {
     opacity: 0.8;
     object-fit: scale-down;
-    height: 100px;
+    height: 64px;
 
     &:last-of-type {
       margin-bottom: 0px;
@@ -51,9 +51,12 @@
       flex-direction: row;
       margin: 0px $tablet-gutter;
 
-      &-item {
-        margin: 20px 0px 50px;
-        width: calc(100% / 3);
+      .skills__container-item {
+        width: calc(75% / 4);
+
+        svg {
+          padding-top: 5px;
+        }
       }
     }
   }
