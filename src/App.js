@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
 import { Route, Switch } from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import useLocalStorage from 'use-local-storage';
 import NavBar from './components/Navigation/NavBar';
 import Contact from './sections/Contact';
 import './App.scss';
@@ -21,11 +23,10 @@ import ScrollUp from './components/Navigation/ScrollUp';
 export default function App() {
   const [visible, setVisible] = useState(false);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
+  const [theme] = useLocalStorage('theme');
 
   const handleScroll = () => {
-    if (window.pageYOffset <= 1000) {
-      document.getElementsByClassName('about-me__image')[0].style.borderRadius = `${window.pageYOffset / 5}%`;
-    } if (window.pageYOffset > 1000) {
+    if (window.pageYOffset > 1000) {
       setShowScrollToTop(true);
     } else setShowScrollToTop(false);
   };
@@ -56,7 +57,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" data-theme={theme}>
       <NavOverlay
         className={classnames(visible ? 'overlay slideIn' : 'overlay slideOut')}
         buttonClick={handleOverlay}

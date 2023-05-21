@@ -1,8 +1,10 @@
 @import "../../styles/shared";
 
 .qualifications {
-  background-color: white;
-
+  img[alt="Teesside Logo"] {
+    filter: var(--white-filter);
+  }
+  
   .title {
     padding-bottom: 40px;
 
@@ -30,6 +32,10 @@
     opacity: 0.8;
     object-fit: scale-down;
     height: 64px;
+
+    &--light {
+      filter: var(--white-filter);
+    }
 
     &:last-of-type {
       margin-bottom: 0px;

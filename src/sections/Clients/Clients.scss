@@ -1,8 +1,6 @@
 @import "../../styles/shared";
 
 .clients {
-  background-color: $light-grey;
-
   .title {
     padding-bottom: 40px;
 
@@ -33,10 +31,9 @@
   }
 
   &__image {
-    filter: grayscale(100%);
+    filter: var(--image-filter);
     object-fit: scale-down;
     margin-bottom: 80px;
-    transition: ease-out 0.5s;
 
     &:last-of-type {
       margin-bottom: 0px;
@@ -57,11 +54,8 @@
     &--ford {
       height: 60px;
     }
-
-    &:hover {
-      filter: grayscale(0%);
-      cursor: pointer;
-      transition: ease-in 0.3s;
+    &--ford-light {
+      height: 90px;
     }
   }
 }

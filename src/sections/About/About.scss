@@ -3,7 +3,7 @@
 .ford-underline {
   border-bottom: 5px solid #1351d8;
   background: linear-gradient(to bottom, #1351d8 0, #1351d8 100%);
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 0 0;
@@ -12,7 +12,7 @@
 .bt-underline {
   border-bottom: 5px solid #553a99;
   background: linear-gradient(to bottom, #553a99 0, #553a99 100%);
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 0 0;
@@ -21,7 +21,7 @@
 .santander-underline {
   border-bottom: 5px solid #ec0000;
   background: linear-gradient(to bottom, #ec0000 0, #ec0000 100%);
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 0 0;

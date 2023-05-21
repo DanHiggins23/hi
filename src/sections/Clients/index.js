@@ -1,9 +1,14 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import useLocalStorage from 'use-local-storage';
 import Intro from '../../components/Text/Intro';
 import './Clients.scss';
 
 export default function Clients() {
+  const [theme] = useLocalStorage('theme');
+  const isDarkMode = theme === 'dark';
+
   return (
     <div className="section clients">
       <Fade bottom>
@@ -37,8 +42,8 @@ export default function Clients() {
             alt="BT Logo"
           />
           <img
-            className="clients__image clients__image--ford"
-            src="/images/clients/ford-logo.png"
+            className={`clients__image ${!isDarkMode ? 'clients__image--ford' : 'clients__image--ford-light'}`}
+            src={!isDarkMode ? '/images/clients/ford-logo.png' : '/images/clients/ford-logo-light.png'}
             alt="Ford Logo"
           />
         </div>

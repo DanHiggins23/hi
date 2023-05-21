@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.scss';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 
 export default function About() {
+  const handleScroll = () => {
+    if (window.pageYOffset <= 1000) {
+      document.getElementsByClassName('about-me__image')[0].style.borderRadius = `${window.pageYOffset / 5}%`;
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="section about-me">
       <div className="about-me">

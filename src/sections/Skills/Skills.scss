@@ -1,8 +1,6 @@
 @import "../../styles/shared";
 
 .skills {
-  background-color: white;
-
   .body {
     margin-top: 60px;
   }
@@ -34,7 +32,7 @@
     margin: 30px 0px 20px;
     font-family: $body;
     font-size: 18px;
-    color: black;
+    color: var(--text-primary);
     text-decoration: none;
     border-bottom: 1px solid transparent;
 
@@ -48,7 +46,7 @@
     font-size: $mobile-p;
     line-height: 20px;
     margin: 0px 40px;
-    color: $body-light;
+    color: var(--text-secondary);
     transition: ease-out 1s;
 
     &:hover {
@@ -74,8 +72,16 @@
       height: 50px;
     }
 
+    &--lrger {
+      height: 60px;
+    }
+
     &--xtra-lrg {
       height: 35px;
+    }
+
+    &--white {
+      filter: brightness(0) invert(1);
     }
   }
 

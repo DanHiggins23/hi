@@ -2,18 +2,22 @@
 
 .nav {
   width: 100%;
-  padding: 35px 0px;
-  background-color: white;
+  padding: 29px 0px;
+  background-color: var(--background-primary);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
   z-index: 99;
+  transition-property: background-color, color;
+  transition-duration: 0.5s, 0.5s;
+  align-items: center;
 
   &__logo {
     font-family: $heading-2;
     font-size: 32px;
     margin-left: 100px;
+    color: var(--text-primary);
     &--mobile {
       display: none;
     }
@@ -22,6 +26,8 @@
   &__list {
     margin-right: 100px;
     align-self: center;
+    display: flex;
+    align-items: center;
 
     &-items {
       display: inline;
@@ -31,7 +37,7 @@
       font-weight: bold;
 
       &-link {
-        color: black;
+        color: var(--text-primary);
         text-decoration: none;
         border-bottom: 1px solid transparent;
         &:hover {
@@ -59,6 +65,7 @@
         font-family: $heading-2;
         font-size: 32px;
         margin: 0px 0px 0px 10px;
+        color: var(--text-primary);
       }
     }
 
@@ -77,7 +84,7 @@
     &__hamburger {
       display: inline-block;
       font-size: 1.4em;
-      color: rgba(199, 197, 196, 1);
+      color: var(--text-primary);
       margin-right: 50px;
       cursor: pointer;
     }

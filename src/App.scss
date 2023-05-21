@@ -20,18 +20,42 @@ a {
 
 .section {
   padding: 150px 0px 120px 0px;
-}
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  transition-property: background-color, color;
+  transition-duration: 0.5s, 0.5s;
 
-.home {
-  height: 100vh;
-  background-color: $light-grey;
+  &:nth-of-type(odd) {
+    background-color: var(--background-secondary);
+  }
 }
 
 .footer {
-  background-color: white;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
   font-family: $body;
   font-size: 16px;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 65px;
+}
+
+// Theme 
+:root {
+  --background-primary: white;
+  --background-secondary: #f8f6f5;
+  --text-primary: #222;
+  --text-secondary: rgba(0, 0, 0, 0.61);
+  --image-filter: grayscale(100%);
+  --white-filter: initial;
+  --toggle-colour: #9a9a9a;
+}
+
+[data-theme='dark'] {
+  --background-primary: #24272f;
+  --background-secondary: #191b21;
+  --text-primary: #e6e6e6;
+  --text-secondary: #9a9a9a;
+  --image-filter: brightness(0) invert(1);
+  --white-filter: brightness(0) invert(1);
 }

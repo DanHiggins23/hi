@@ -1,6 +1,8 @@
 import React from 'react';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faBug, faInfinity, faCode } from '@fortawesome/free-solid-svg-icons';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import useLocalStorage from 'use-local-storage';
 import Fade from 'react-reveal/Fade';
 import Intro from '../../components/Text/Intro';
 import Body from '../../components/Text/Body';
@@ -8,6 +10,9 @@ import './Skills.scss';
 import SkillsItem from '../../components/SkillsItem';
 
 export default function Skills() {
+  const [theme] = useLocalStorage('theme');
+  const isDarkMode = theme === 'dark';
+
   return (
     <div className="section skills">
       <Fade bottom>
@@ -67,12 +72,12 @@ export default function Skills() {
           />
           <img
             className="skills__icon--lrg"
-            src="/images/skills/storybook.png"
+            src={!isDarkMode ? '/images/skills/storybook.png' : '/images/skills/storybook-light.png'}
             alt="Storybook Logo"
           />
           <img
             className="skills__icon--lrg"
-            src="/images/skills/flow.png"
+            src={!isDarkMode ? '/images/skills/flow.png' : '/images/skills/flow-light.png'}
             alt="Flow Logo"
           />
           <img
@@ -81,7 +86,7 @@ export default function Skills() {
             alt="Axios Logo"
           />
           <img
-            className="skills__icon--lrg"
+            className={`skills__icon--lrger ${isDarkMode && 'skills__icon--white'}`}
             src="/images/skills/circle-ci.png"
             alt="Circle CI Logo"
           />

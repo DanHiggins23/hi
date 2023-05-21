@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import Progress from '../Progress';
+import DarkModeToggle from '../../DarkModeToggle';
 
 export default function NavBar(props) {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -53,6 +54,7 @@ export default function NavBar(props) {
         </Link>
 
         <ul className="nav__list">
+          <DarkModeToggle />
           <li className="nav__list-items nav__list-items--desktop">
             <a
               className="nav__list-items-link"

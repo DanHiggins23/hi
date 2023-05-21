@@ -1,15 +1,12 @@
 @import "../../styles/shared";
 
 .projects {
-  background-color: $light-grey;
-
   &__tile-container {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
     margin: auto;
     width: 75%;
-    height: 600px;
     gap: 25px;
   }
 

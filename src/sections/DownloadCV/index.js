@@ -5,7 +5,7 @@ import pdf from '../../utils/pdf/DanHiggins.pdf';
 
 export default function DownloadCV() {
   return (
-    <div className="download-cv">
+    <div className="section download-cv">
       <Fade bottom>
         <h2 className="download-cv__title">Want to find out more?</h2>
         <h3 className="download-cv__description">
