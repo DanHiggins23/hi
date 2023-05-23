@@ -12,7 +12,7 @@
 
   &__tile {
     width: 100%;
-    height: calc(100% / 3 - 20px);
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,19 +43,19 @@
     transition: ease-in-out 0.4s;
 
     &--santander {
-      height: 80px;
+      height: 60px;
     }
 
     &--bt {
-      height: 80px;
+      height: 60px;
     }
 
     &--ford {
-      height: 50px;
+      height: 40px;
     }
 
     &--thg {
-      height: 80px;
+      height: 60px;
     }
   }
 }
@@ -86,6 +86,10 @@
 
       &--ford {
         height: 70px;
+      }
+
+      &--thg {
+        height: 80px;
       }
     }
   }

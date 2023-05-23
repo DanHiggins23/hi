@@ -55,6 +55,12 @@ export default function NavBar(props) {
 
         <ul className="nav__list">
           <DarkModeToggle />
+          <FontAwesomeIcon
+            onClick={props.buttonClick}
+            className="nav__hamburger"
+            icon={faBars}
+          />
+
           <li className="nav__list-items nav__list-items--desktop">
             <a
               className="nav__list-items-link"
@@ -80,11 +86,6 @@ export default function NavBar(props) {
             </a>
           </li>
         </ul>
-        <FontAwesomeIcon
-          onClick={props.buttonClick}
-          className="nav__hamburger"
-          icon={faBars}
-        />
       </div>
       <Progress scroll={`${scrollPosition}%`} />
     </>
