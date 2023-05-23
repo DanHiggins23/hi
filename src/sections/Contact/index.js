@@ -12,7 +12,7 @@ export default function Contact() {
       <Fade bottom>
         <Intro
           title="Want to get in touch? &#128222;"
-          description="Want to say Hello? Check out what I've been up to on Linked In or GitHub. Otherwise just drop me an email!"
+          description="Want to say Hello? Check out what I've been up to on LinkedIn or GitHub. Otherwise just drop me an email!"
         />
 
         <div className="contact-me__container">
