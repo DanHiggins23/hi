@@ -14,9 +14,9 @@ export default function Ford() {
         <Intro
           title="Overview"
           description="During this 3-month summer placement as Project Manager at Ford, I was involved in multiple
-                    different projects, responsible for holding meetings with world-wide clients, working with large
-                    amounts of capital. I personally solely managed a pilot project for the company and brought a
-                    project from Red status to Green in my time at Ford, in which I collaboratively managed a remote team in the United States. During this time, I got very accustomed to
+                    different projects, responsible for holding meetings with world-wide clients and working with large
+                    amounts of capital. I solely managed a pilot project for the company and brought a
+                    project from Red status to Green, in which I collaboratively managed a remote team in the United States. During this time, I got very accustomed to
                     using software such as WebEx and developing my ability to make relationships over the phone."
         />
 
@@ -36,7 +36,7 @@ export default function Ford() {
 
         <Body
           title="What did I learn?"
-          description="As Ford was my first proper placement and my first taste of working life, I learnt a vast amount. I really developed my ability to develop relationships with colleagues and clients, especially over the phone. A lot of our team worked in the United States, and therefore I never got to meet them face to face. However, taking the time to chat with each team member at the start of each meeting really allowed me to get to know them. As I solely managed a pilot project, it was a great opportunity to put to use my leadership skills - which I really enjoyed."
+          description="As Ford was my first proper placement and my first taste of working life, I learnt a vast amount. I really improved my ability to develop relationships with colleagues and clients, especially over the phone. A lot of our team worked in the United States, and therefore I never got to meet them face-to-face. However, taking the time to chat with each team member at the start of each meeting really allowed me to get to know them. Solely managing a pilot project was also a great opportunity to put to use my leadership skills - which I really enjoyed."
         />
 
         <div className="projectInfo__line" />
