@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faJava, faReact, faJenkins,
 } from '@fortawesome/free-brands-svg-icons';
-import { faBug } from '@fortawesome/free-solid-svg-icons';
 import Body from '../../../../components/Text/Body';
 import Intro from '../../../../components/Text/Intro';
 import Back from '../../../../components/Navigation/Back';
@@ -36,7 +35,6 @@ export default function THG() {
           <FontAwesomeIcon className="projectInfo__tech-icon" icon={faReact} />
           <FontAwesomeIcon className="projectInfo__tech-icon" icon={faJava} />
           <FontAwesomeIcon className="projectInfo__tech-icon" icon={faJenkins} />
-          <FontAwesomeIcon className="projectInfo__tech-icon" icon={faBug} />
         </div>
 
         <Body

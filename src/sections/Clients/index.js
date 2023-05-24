@@ -1,6 +1,5 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import useLocalStorage from 'use-local-storage';
 import Intro from '../../components/Text/Intro';
 import './Clients.scss';

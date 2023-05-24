@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
 import { Route, Switch } from 'react-router-dom';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import useLocalStorage from 'use-local-storage';
 import NavBar from './components/Navigation/NavBar';
 import Contact from './sections/Contact';

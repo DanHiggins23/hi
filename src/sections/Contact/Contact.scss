@@ -22,6 +22,8 @@
 
 @media (min-width: $tablet) {
   .contact-me__container {
+    max-width: 50%;
+
     &-item {
       font-size: 4em;
     }

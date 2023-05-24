@@ -28,6 +28,15 @@ export default function NavOverlay(props) {
           <li className="overlay__nav-item">
             <Link
               className="overlay__nav-link"
+              to="/thg"
+              onClick={props.buttonClick}
+            >
+              THG
+            </Link>
+          </li>
+          <li className="overlay__nav-item">
+            <Link
+              className="overlay__nav-link"
               to="/ford"
               onClick={props.buttonClick}
             >

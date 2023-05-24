@@ -1,7 +1,6 @@
 import React from 'react';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faBug, faInfinity, faCode } from '@fortawesome/free-solid-svg-icons';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import useLocalStorage from 'use-local-storage';
 import Fade from 'react-reveal/Fade';
 import Intro from '../../components/Text/Intro';
