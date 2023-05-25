@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.829705bc.css",
+    "main.css": "/static/css/main.708c67f1.css",
     "main.js": "/static/js/main.e3aecd07.js",
     "static/media/DanHiggins.pdf": "/static/media/DanHiggins.3068a3251ba65b6a6034.pdf",
     "index.html": "/index.html",
-    "main.829705bc.css.map": "/static/css/main.829705bc.css.map",
+    "main.708c67f1.css.map": "/static/css/main.708c67f1.css.map",
     "main.e3aecd07.js.map": "/static/js/main.e3aecd07.js.map"
   },
   "entrypoints": [
-    "static/css/main.829705bc.css",
+    "static/css/main.708c67f1.css",
     "static/js/main.e3aecd07.js"
   ]
 }
