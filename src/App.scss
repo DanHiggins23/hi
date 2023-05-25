@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 
   *::selection {
-    background: #62757f;
+    background: var(--highlight-colour);
   }
 }
 
@@ -53,6 +53,7 @@ a {
   --image-filter: grayscale(100%);
   --white-filter: initial;
   --toggle-colour: #9a9a9a;
+  --highlight-colour: #90a4ae;
 }
 
 [data-theme='dark'] {
@@ -62,4 +63,5 @@ a {
   --text-secondary: #9a9a9a;
   --image-filter: brightness(0) invert(1);
   --white-filter: brightness(0) invert(1);
+  --highlight-colour: #62757f;
 }
