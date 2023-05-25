@@ -22,6 +22,7 @@ export default function BT() {
             className="projectInfo__tile-image projectInfo__tile-image--bt"
             src="/images/clients/bt-logo.png"
             alt="BT Logo"
+            loading="lazy"
           />
         </div>
 

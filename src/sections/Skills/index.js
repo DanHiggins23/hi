@@ -48,46 +48,55 @@ export default function Skills() {
             className="skills__icon"
             src="/images/skills/react.png"
             alt="React Logo"
+            loading="lazy"
           />
           <img
             className="skills__icon"
             src="/images/skills/redux.png"
             alt="Redux Logo"
+            loading="lazy"
           />
           <img
             className="skills__icon"
             src="/images/skills/rtl.png"
             alt="React Testing Library Logo"
+            loading="lazy"
           />
           <img
             className="skills__icon"
             src="/images/skills/jest.png"
             alt="Jest Logo"
+            loading="lazy"
           />
           <img
             className="skills__icon"
             src="/images/skills/emotion.png"
             alt="Emotion Logo"
+            loading="lazy"
           />
           <img
             className="skills__icon--lrg"
             src={!isDarkMode ? '/images/skills/storybook.png' : '/images/skills/storybook-light.png'}
             alt="Storybook Logo"
+            loading="lazy"
           />
           <img
             className="skills__icon--lrg"
             src={!isDarkMode ? '/images/skills/flow.png' : '/images/skills/flow-light.png'}
             alt="Flow Logo"
+            loading="lazy"
           />
           <img
             className="skills__icon--xtra-lrg"
             src="/images/skills/axios.png"
             alt="Axios Logo"
+            loading="lazy"
           />
           <img
             className={`skills__icon--lrger ${isDarkMode && 'skills__icon--white'}`}
             src="/images/skills/circle-ci.png"
             alt="Circle CI Logo"
+            loading="lazy"
           />
         </div>
       </Fade>

@@ -7,6 +7,10 @@ html {
 body {
   max-width: 100%;
   overflow-x: hidden;
+
+  *::selection {
+    background: #62757f;
+  }
 }
 
 img {

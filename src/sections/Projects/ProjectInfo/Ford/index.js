@@ -25,6 +25,7 @@ export default function Ford() {
             className="projectInfo__tile-image projectInfo__tile-image--ford"
             src="/images/clients/ford-logo-trans.png"
             alt="Ford Logo"
+            loading="lazy"
           />
         </div>
 

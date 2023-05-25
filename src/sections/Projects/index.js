@@ -19,6 +19,7 @@ export default function Projects() {
                 className="projects__tile-image projects__tile-image--thg"
                 src="/images/clients/thg-logo.png"
                 alt="THG Logo"
+                loading="lazy"
               />
             </div>
           </Link>
@@ -28,6 +29,7 @@ export default function Projects() {
                 className="projects__tile-image--santander"
                 src="/images/clients/santander-logo.png"
                 alt="Santander Logo"
+                loading="lazy"
               />
             </div>
           </Link>
@@ -37,6 +39,7 @@ export default function Projects() {
                 className="projects__tile-image projects__tile-image--bt"
                 src="/images/clients/bt-logo.png"
                 alt="BT Logo"
+                loading="lazy"
               />
             </div>
           </Link>
@@ -46,6 +49,7 @@ export default function Projects() {
                 className="projects__tile-image--ford"
                 src="/images/clients/ford-logo-trans.png"
                 alt="Santander Logo"
+                loading="lazy"
               />
             </div>
           </Link>

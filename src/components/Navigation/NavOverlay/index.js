@@ -54,19 +54,19 @@ export default function NavOverlay(props) {
           </li>
         </ul>
         <div className="overlay__socials">
-          <a href="https://www.linkedin.com/in/danhiggins23">
+          <a href="https://www.linkedin.com/in/danhiggins23" aria-label="View my LinkedIn profile">
             <FontAwesomeIcon
               className="overlay__socials-icon"
               icon={faLinkedinIn}
             />
           </a>
-          <a href="https://github.com/DanHiggins23">
+          <a href="https://github.com/DanHiggins23" aria-label="View my GitHub profile">
             <FontAwesomeIcon
               className="overlay__socials-icon"
               icon={faGithub}
             />
           </a>
-          <a href="mailto:danhiggins23@outlook.com">
+          <a href="mailto:danhiggins23@outlook.com" aria-label="Email me">
             <FontAwesomeIcon
               className="overlay__socials-icon"
               icon={faEnvelope}

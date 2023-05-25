@@ -20,6 +20,7 @@ export default function Contact() {
             <a
               className="contact-me__icon"
               href="https://www.linkedin.com/in/danhiggins23"
+              aria-label="View my LinkedIn profile"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
@@ -28,6 +29,7 @@ export default function Contact() {
             <a
               className="contact-me__icon"
               href="https://github.com/DanHiggins23"
+              aria-label="View my GitHub profile"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -36,6 +38,7 @@ export default function Contact() {
             <a
               className="contact-me__icon"
               href="mailto:danhiggins23@outlook.com"
+              aria-label="Email me"
             >
               <FontAwesomeIcon icon={faEnvelope} />
             </a>

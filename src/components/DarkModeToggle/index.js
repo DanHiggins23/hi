@@ -23,7 +23,7 @@ export default function DarkModeToggle() {
           name="toggle"
           type="checkbox"
           checked={isDarkMode}
-          onClick={() => setTheme(isDarkMode ? 'light' : 'dark')}
+          onChange={() => setTheme(isDarkMode ? 'light' : 'dark')}
         />
       </div>
     </label>

@@ -54,12 +54,15 @@ export default function NavBar(props) {
         </Link>
 
         <ul className="nav__list">
-          <DarkModeToggle />
-          <FontAwesomeIcon
-            onClick={props.buttonClick}
-            className="nav__hamburger"
-            icon={faBars}
-          />
+          <li className="nav__list-items">
+            <DarkModeToggle />
+          </li>
+          <li className="nav__list-items nav__hamburger">
+            <FontAwesomeIcon
+              onClick={props.buttonClick}
+              icon={faBars}
+            />
+          </li>
 
           <li className="nav__list-items nav__list-items--desktop">
             <a
@@ -81,6 +84,7 @@ export default function NavBar(props) {
             <a
               className="nav__list-items-link"
               href="mailto:danhiggins23@outlook.com"
+              aria-label="Email me"
             >
               <FontAwesomeIcon icon={faEnvelope} />
             </a>

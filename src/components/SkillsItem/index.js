@@ -28,6 +28,7 @@ export default function SkillsItem(props) {
           className="qualifications__image qualifications__image"
           src={props.imagePath}
           alt={props.altText}
+          loading="lazy"
         />
       )}
       <span className="skills__link">{props.titleLink ? <a className="skills__link-a" href={props.titleLink}>{props.title}</a> : props.title}</span>

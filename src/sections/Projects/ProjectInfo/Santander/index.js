@@ -22,6 +22,7 @@ export default function Santander() {
             className="projectInfo__tile-image projectInfo__tile-image--santander"
             src="/images/clients/santander-logo.png"
             alt="Santander Logo"
+            loading="lazy"
           />
         </div>
 

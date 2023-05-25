@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 export default function ScrollUp(props) {
   return (
     <Fade top opposite collpase when={props.show}>
-      <button className="scroll-up hvr-icon-wobble-vertical" type="button">
+      <button className="scroll-up hvr-icon-wobble-vertical" type="button" aria-label="Scroll to top button">
         <FontAwesomeIcon
           className="scroll-up__icon hvr-icon"
           icon={faChevronCircleUp}

@@ -23,6 +23,7 @@ export default function THG() {
             className="projectInfo__tile-image projectInfo__tile-image--thg"
             src="/images/clients/thg-logo.png"
             alt="THG Logo"
+            loading="lazy"
           />
         </div>
 
