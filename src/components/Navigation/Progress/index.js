@@ -9,7 +9,7 @@ const Progress = styled.div`
   );
   width: 100%;
   height: 5px;
-  margin-top: 102px;
+  margin-top: 105px;
   z-index: 900;
 `;
 
