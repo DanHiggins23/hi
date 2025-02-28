@@ -17,28 +17,28 @@ export default function Skills() {
       <Fade bottom>
         <Intro
           title="What can I do? 💻"
-          description="My passion is within front-end development, and has been the focus for the majority of my career, I love the creativity aspect of it. Here's some examples of what I can do..."
+          description="My passion has always lied within front-end development, and has been the focus for the majority of my career. I love the creativity aspect of it, and thrive on creating high quality UX's. I pride myself in clean, maintainable code, with a focus on performance, accessibility and readability."
         />
         <div className="skills__container">
           <SkillsItem
             icon={faReact}
             title="React"
-            text="I've been using React for ~4 years now, across a mixture of proffesional and personal projects. Daily I use hooks, context, Redux and Flow JS and also use Axios & Fetch for network requests."
+            text="I've been using React for ~6 years now, across a mixture of professional and personal projects. Daily I use hooks, context, Redux Toolkit and Flow JS. I also use Axios & Fetch for network requests."
           />
           <SkillsItem
             icon={faBug}
             title="Testing"
-            text="I've recently been using a combination of React Testing Library & Jest for unit tests. In previous projects, I've used Enzyme, Cypress, JUnit and Selenium."
+            text="I've recently been using a combination of React Testing Library & Jest for unit/integration tests, and Playwright for end-to-end testing. In previous projects, I've used Enzyme, Mocha, Cypress, JUnit and Selenium."
           />
           <SkillsItem
             icon={faCode}
             title="Styling"
-            text="Recently, I've mainly been using Javascript style systems, where I've been using Emotion and JSS. I've also developed with MaterialUI components, and extensively used SASS & LESS."
+            text="Although I have a lot of experience using SASS, CSS & LESS, over the last few years I've mainly been using Javascript style systems, where I've been using Emotion and JSS. I also develop with MaterialUI components in a custom design system, building wrappers and custom components based on the library."
           />
           <SkillsItem
             icon={faInfinity}
             title="CI/CD"
-            text="Over the past few years I've started to get more involved in CI/CD processes, using CircleCI and Jenkins for release & build processes, as well as integrations with Github & Jira."
+            text="Over the past few years I've had a lot of usage within CircleCi and Jenkins, from running cost analysis to adjust resources to reduce costs and decreaase failures, to release roll-out, and integrating completely new workflows and jobs."
           />
         </div>
 
@@ -76,13 +76,21 @@ export default function Skills() {
           />
           <img
             className="skills__icon--lrg"
-            src={!isDarkMode ? '/images/skills/storybook.png' : '/images/skills/storybook-light.png'}
+            src={
+              !isDarkMode
+                ? '/images/skills/storybook.png'
+                : '/images/skills/storybook-light.png'
+            }
             alt="Storybook Logo"
             loading="lazy"
           />
           <img
             className="skills__icon--lrg"
-            src={!isDarkMode ? '/images/skills/flow.png' : '/images/skills/flow-light.png'}
+            src={
+              !isDarkMode
+                ? '/images/skills/flow.png'
+                : '/images/skills/flow-light.png'
+            }
             alt="Flow Logo"
             loading="lazy"
           />
@@ -93,7 +101,9 @@ export default function Skills() {
             loading="lazy"
           />
           <img
-            className={`skills__icon--lrger ${isDarkMode && 'skills__icon--white'}`}
+            className={`skills__icon--lrger ${
+              isDarkMode && 'skills__icon--white'
+            }`}
             src="/images/skills/circle-ci.png"
             alt="Circle CI Logo"
             loading="lazy"

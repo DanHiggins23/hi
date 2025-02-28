@@ -2,9 +2,7 @@ import React from 'react';
 import '../ProjectInfo.scss';
 import Fade from 'react-reveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faJava, faReact, faJenkins,
-} from '@fortawesome/free-brands-svg-icons';
+import { faJava, faReact, faJenkins } from '@fortawesome/free-brands-svg-icons';
 import Body from '../../../../components/Text/Body';
 import Intro from '../../../../components/Text/Intro';
 import Back from '../../../../components/Navigation/Back';
@@ -35,7 +33,10 @@ export default function THG() {
         <div className="projectInfo__tech-container">
           <FontAwesomeIcon className="projectInfo__tech-icon" icon={faReact} />
           <FontAwesomeIcon className="projectInfo__tech-icon" icon={faJava} />
-          <FontAwesomeIcon className="projectInfo__tech-icon" icon={faJenkins} />
+          <FontAwesomeIcon
+            className="projectInfo__tech-icon"
+            icon={faJenkins}
+          />
         </div>
 
         <Body

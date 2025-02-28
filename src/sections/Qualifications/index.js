@@ -2,7 +2,6 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Intro from '../../components/Text/Intro';
-import Body from '../../components/Text/Body';
 import './Qualifications.scss';
 import SkillsItem from '../../components/SkillsItem';
 
@@ -12,7 +11,7 @@ export default function Qualifications() {
       <Fade bottom>
         <Intro
           title="My qualifcations 🏆"
-          description="Here's some qualifications & courses I've completed recently. I'm looking into expanding this list with more courses around performance & accessibility within web development."
+          description="Here's some qualifications & courses I've completed recently. Most recently I've achieved Profesional Scrum Master I, and taken on the responsibility of Scrum Master within my squad."
         />
 
         <div className="qualifications__container">
@@ -22,9 +21,9 @@ export default function Qualifications() {
             title="BSc Computer &amp; Digital Forensics"
           />
           <SkillsItem
-            imagePath="/images/clients/open-university.png"
-            altText="Open University Logo"
-            title="Introduction to Cyber Security"
+            imagePath="/images/clients/scrumorg-1.svg"
+            altText="Scrum.org Logo"
+            title="Proffesional Scrum Master I"
           />
           <SkillsItem
             icon={faLinkedinIn}
@@ -35,6 +34,11 @@ export default function Qualifications() {
             icon={faLinkedinIn}
             title="Developing for Web Performance"
             titleLink="https://www.linkedin.com/learning/certificates/c851f244ca4e21873b19423d6cc3e601707ee06d81e54551862e06231dae4cfd"
+          />
+          <SkillsItem
+            imagePath="/images/clients/open-university.png"
+            altText="Open University Logo"
+            title="Introduction to Cyber Security"
           />
         </div>
       </Fade>

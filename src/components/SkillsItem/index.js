@@ -31,15 +31,23 @@ export default function SkillsItem(props) {
           loading="lazy"
         />
       )}
-      <span className="skills__link">{props.titleLink ? <a className="skills__link-a" href={props.titleLink}>{props.title}</a> : props.title}</span>
+      <span className="skills__link">
+        {props.titleLink ? (
+          <a className="skills__link-a" href={props.titleLink}>
+            {props.title}
+          </a>
+        ) : (
+          props.title
+        )}
+      </span>
       {props.text && (
         <button onClick={handleClick} type="button" className="skills__button">
           <p
             className={
-            showText
-              ? 'skills__description skills__test hvr-icon-up'
-              : 'skills__description hvr-icon-down'
-          }
+              showText
+                ? 'skills__description skills__test hvr-icon-up'
+                : 'skills__description hvr-icon-down'
+            }
           >
             {getStringLength(props.text)}
             <FontAwesomeIcon

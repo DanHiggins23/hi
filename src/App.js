@@ -15,7 +15,7 @@ import Skills from './sections/Skills';
 import Qualifications from './sections/Qualifications';
 import BT from './sections/Projects/ProjectInfo/BT';
 import Santander from './sections/Projects/ProjectInfo/Santander';
-import Ford from './sections/Projects/ProjectInfo/Ford';
+import Kitman from './sections/Projects/ProjectInfo/Kitman';
 import THG from './sections/Projects/ProjectInfo/THG';
 import ScrollUp from './components/Navigation/ScrollUp';
 
@@ -88,8 +88,8 @@ export default function App() {
           <Santander />
         </Route>
 
-        <Route path="/ford">
-          <Ford />
+        <Route path="/kitman">
+          <Kitman />
         </Route>
 
         <Route path="/thg">

@@ -58,10 +58,7 @@ export default function NavBar(props) {
             <DarkModeToggle />
           </li>
           <li className="nav__list-items nav__hamburger">
-            <FontAwesomeIcon
-              onClick={props.buttonClick}
-              icon={faBars}
-            />
+            <FontAwesomeIcon onClick={props.buttonClick} icon={faBars} />
           </li>
 
           <li className="nav__list-items nav__list-items--desktop">

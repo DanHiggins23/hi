@@ -9,9 +9,18 @@
   background-size: 0 0;
 }
 
-.bt-underline {
-  border-bottom: 5px solid #553a99;
-  background: linear-gradient(to bottom, #553a99 0, #553a99 100%);
+.premierLeague-underline {
+  border-bottom: 5px solid #38003c;
+  background: linear-gradient(to bottom, #38003c 0, #38003c 100%);
+  transition: background 0.4s ease-in-out;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0 0;
+}
+
+.myProtein-underline {
+  border-bottom: 5px solid #003942;
+  background: linear-gradient(to bottom, #003942 0, #003942 100%);
   transition: background 0.4s ease-in-out;
   background-position: 0 100%;
   background-repeat: repeat-x;
@@ -28,7 +37,8 @@
 }
 
 .ford-underline:hover,
-.bt-underline:hover,
+.premierLeague-underline:hover,
+.myProtein-underline:hover,
 .santander-underline:hover {
   background-size: 0.625rem 3.125rem;
   transition: background 0.4s ease-in-out, color 0.4s ease-in-out;

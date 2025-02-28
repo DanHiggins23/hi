@@ -5,7 +5,10 @@ import './DarkModeToggle.scss';
 
 export default function DarkModeToggle() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+  const [theme, setTheme] = useLocalStorage(
+    'theme',
+    defaultDark ? 'dark' : 'light',
+  );
   const isDarkMode = theme === 'dark';
 
   return (

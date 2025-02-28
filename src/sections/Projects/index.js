@@ -13,6 +13,16 @@ export default function Projects() {
           description="Want to see what I've been up to? Click any tile to have a look at what I've been up to."
         />
         <div className="projects__tile-container">
+          <Link className="projects__tile projects__tile--kitman" to="/kitman">
+            <div className="projects__tile-image">
+              <img
+                className="projects__tile-image--kitman"
+                src="/images/clients/kitman-logo.png"
+                alt="Kitman Labs Logo"
+                loading="lazy"
+              />
+            </div>
+          </Link>
           <Link className="projects__tile projects__tile--thg" to="/thg">
             <div className="projects__tile-image">
               <img
@@ -23,7 +33,10 @@ export default function Projects() {
               />
             </div>
           </Link>
-          <Link className="projects__tile projects__tile--santander" to="/santander">
+          <Link
+            className="projects__tile projects__tile--santander"
+            to="/santander"
+          >
             <div className="projects__tile-image">
               <img
                 className="projects__tile-image--santander"
@@ -39,16 +52,6 @@ export default function Projects() {
                 className="projects__tile-image projects__tile-image--bt"
                 src="/images/clients/bt-logo.png"
                 alt="BT Logo"
-                loading="lazy"
-              />
-            </div>
-          </Link>
-          <Link className="projects__tile projects__tile--ford" to="/ford">
-            <div className="projects__tile-image">
-              <img
-                className="projects__tile-image--ford"
-                src="/images/clients/ford-logo-trans.png"
-                alt="Santander Logo"
                 loading="lazy"
               />
             </div>

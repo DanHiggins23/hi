@@ -13,7 +13,7 @@ export default function Clients() {
       <Fade bottom>
         <Intro
           title="Who've I been working with? 🤝"
-          description="Here's a few of the companies I've been working with over the last few years. My roles have ranged from project management to back-end, front-end and full-stack developer. I'm currently employed by Kitman Labs as a Front-end developer."
+          description="I've worked in industries such as sports tech, e-commerce and banking, and have worked on a wide range of applications, used by thousands of customers daily. I'm currently at Kitman Labs, as a Senior Frontend Engineer."
         />
 
         <div className="clients__container--top">
@@ -45,8 +45,16 @@ export default function Clients() {
             loading="lazy"
           />
           <img
-            className={`clients__image ${!isDarkMode ? 'clients__image--ford' : 'clients__image--ford-light'}`}
-            src={!isDarkMode ? '/images/clients/ford-logo.png' : '/images/clients/ford-logo-light.png'}
+            className={`clients__image ${
+              !isDarkMode
+                ? 'clients__image--ford'
+                : 'clients__image--ford-light'
+            }`}
+            src={
+              !isDarkMode
+                ? '/images/clients/ford-logo.png'
+                : '/images/clients/ford-logo-light.png'
+            }
             alt="Ford Logo"
             loading="lazy"
           />

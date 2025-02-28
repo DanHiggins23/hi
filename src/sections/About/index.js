@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 export default function About() {
   const handleScroll = () => {
     if (window.pageYOffset <= 1000) {
-      document.getElementsByClassName('about-me__image')[0].style.borderRadius = `${window.pageYOffset / 5}%`;
+      document.getElementsByClassName(
+        'about-me__image',
+      )[0].style.borderRadius = `${window.pageYOffset / 5}%`;
     }
   };
 
@@ -37,21 +39,23 @@ export default function About() {
         </div>
         <Fade bottom delay={500}>
           <h3 className="about-me__description">
-            I&apos;ve been working on a range of projects with companies such as
+            I&apos;ve been working on a range of projects with clients such as
             {' '}
-            <span className="ford-underline">
-              <Link to="/ford">Ford</Link>
-            </span>
+            <span className="premierLeague-underline">Premier League</span>
             ,
             {' '}
-            <span className="bt-underline">
-              <Link to="/bt">BT</Link>
+            <span className="myProtein-underline">Myprotein</span>
+            {' '}
+            ,
+            {' '}
+            <span className="santander-underline">
+              <Link to="/santander">Santander</Link>
             </span>
             {' '}
             and
             {' '}
-            <span className="santander-underline">
-              <Link to="/santander">Santander</Link>
+            <span className="ford-underline">
+              Ford
             </span>
             {' '}
             over the last few years. Have a look what I&apos;ve been up to!

@@ -37,30 +37,36 @@ export default function NavOverlay(props) {
           <li className="overlay__nav-item">
             <Link
               className="overlay__nav-link"
-              to="/ford"
-              onClick={props.buttonClick}
-            >
-              FORD
-            </Link>
-          </li>
-          <li className="overlay__nav-item">
-            <Link
-              className="overlay__nav-link"
               to="/santander"
               onClick={props.buttonClick}
             >
               SANTANDER
             </Link>
           </li>
+          <li className="overlay__nav-item">
+            <Link
+              className="overlay__nav-link"
+              to="/kitman"
+              onClick={props.buttonClick}
+            >
+              KITMAN LABS
+            </Link>
+          </li>
         </ul>
         <div className="overlay__socials">
-          <a href="https://www.linkedin.com/in/danhiggins23" aria-label="View my LinkedIn profile">
+          <a
+            href="https://www.linkedin.com/in/danhiggins23"
+            aria-label="View my LinkedIn profile"
+          >
             <FontAwesomeIcon
               className="overlay__socials-icon"
               icon={faLinkedinIn}
             />
           </a>
-          <a href="https://github.com/DanHiggins23" aria-label="View my GitHub profile">
+          <a
+            href="https://github.com/DanHiggins23"
+            aria-label="View my GitHub profile"
+          >
             <FontAwesomeIcon
               className="overlay__socials-icon"
               icon={faGithub}
